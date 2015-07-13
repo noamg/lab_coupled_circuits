@@ -81,8 +81,78 @@
 רקע תיאורטי
 \end_layout
 
+\begin_layout Section*
+רכיבים במעגל חשמלי
+\end_layout
+
+\begin_layout Standard
+>>>עכבה<<<
+\end_layout
+
+\begin_layout Section*
+מעגלי
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RLC
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ >>>אפשר לוותר?<<<
+\end_layout
+
+\begin_layout Section*
+צימוד קיבולי
+\end_layout
+
+\begin_layout Section*
+צימוד השראותי
+\end_layout
+
 \begin_layout Part*
 מערכת הניסוי
+\end_layout
+
+\begin_layout Standard
+>>>תמונות של המעגלים<<<
+\end_layout
+
+\begin_layout Section*
+מהלך הניסוי
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Part*
@@ -107,10 +177,6 @@
 
 \begin_layout Subsection*
 <<<מדידה על פי עוצמה בתדרים שונים
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Part*
