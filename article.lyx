@@ -86,7 +86,63 @@
 \end_layout
 
 \begin_layout Standard
->>>עכבה<<<
+במעגלים חשמליים משתמשים בשלושה רכיבים נפוצים: נגד, סליל )משרן(, קבל.
+ המתח בין קצותיהם נתון לפי:
+\begin_inset Formula 
+\[
+V_{R}=IR,V_{c}=\frac{1}{c}Q,V_{L}=L\dot{I}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $R$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $L$
+\end_inset
+
+ הם התנגדות הנגד, קיבול הקבל, השראות העצמית של הסליל קבועים המתארים את כל
+ אחד מהרכיבים.
+ ו- 
+\begin_inset Formula $Q$
+\end_inset
+
+ המטען האגור על אחד מצידי הקבל, 
+\begin_inset Formula $I$
+\end_inset
+
+ הזרם דרך הנגד או הסליל.
+ כאשר הזרם הזורם דרך רכיב הוא זרם חילופין: 
+\begin_inset Formula $I=I(t)=I_{0}\cdot\exp(i\omega t)$
+\end_inset
+
+, הנוסחאות הללו ניתנות להצגה באמצעות עכבה 
+\begin_inset Formula $Z$
+\end_inset
+
+ לפי: 
+\begin_inset Formula $V=ZI$
+\end_inset
+
+ כאשר:
+\begin_inset Formula 
+\[
+Z_{R}=R,Z_{C}=\frac{1}{i\omega c},Z_{L}=i\omega L
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -131,43 +187,479 @@ RLC
  >>>אפשר לוותר?<<<
 \end_layout
 
-\begin_layout Section*
-צימוד קיבולי
+\begin_layout Standard
+שרטוט מעגל + היגב למתח מאלץ, משוואה, פיתרון מד"ר, פיתרון עכבות.
+ תחום של ריסון חלש - בעצם לא מתאים למקרה שלנו, שבו יש אילוץ.
+ רזוננס.
+ מקדם 
+\begin_inset Formula $Q$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
-צימוד השראותי
-\end_layout
+צימוד קיבולי של מעגלי 
+\begin_inset Formula $RLC$
+\end_inset
 
-\begin_layout Part*
-מערכת הניסוי
+
 \end_layout
 
 \begin_layout Standard
->>>תמונות של המעגלים<<<
+שרטוט מעגל, משוואות, ניתן ללכסן )לשבור צימוד(.
+ מקרה פרטי נוח - הרכיבים של המעגלים זהים זה.
+ ליכסון טריוויאלי 
+\begin_inset Formula $I_{+},I_{-}$
+\end_inset
+
+.
+ משפט על זה שאין באמת זרם כזה, תיאור מתמטי.
+\end_layout
+
+\begin_layout Standard
+מקבלים משוואות אוסילטור הרמוני.
+ פיתרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, פיתרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ תדרי רזוננס.
+\end_layout
+
+\begin_layout Standard
+צימוד חלש - תדרי תהודה קרובים.
+ נוסחאות.
 \end_layout
 
 \begin_layout Section*
-מהלך הניסוי
+צימוד השראותי של מעגלי 
+\begin_inset Formula $RLC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שרטוט מעגל.
+ מנגנון פיסיקלי: השראות הדדית, חוק פאראדיי.
+\end_layout
+
+\begin_layout Standard
+משוואות, ליכסון?
+\end_layout
+
+\begin_layout Standard
+פתרונות.
+\end_layout
+
+\begin_layout Part*
+מערכת הניסוי ומהלך הניסוי
+\end_layout
+
+\begin_layout Subsection*
+צימוד קיבולי
+\end_layout
+
+\begin_layout Standard
+>>>תמונות של המעגלים, עם הדגשה של נקודות המדידה<<<
+\end_layout
+
+\begin_layout Standard
+הרכבנו מעגל כמתואר באיור, מדדנו את המתחים >
+\numeric on
+1
+\numeric off
+<, >
+\numeric on
+2
+\numeric off
+< מהם חישבנו את הזרמים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1,2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפי __
+\end_layout
+
+\begin_layout Standard
+בחרנו רכיבים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+123
+\numeric off
+, הוספנו למעגל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נגד שתפקידו לאזן את ההתנגדות הפנימית של ספק המתח.
+\end_layout
+
+\begin_layout Subsection*
+צימוד השראותי
+\end_layout
+
+\begin_layout Standard
+>>>תמונות של המעגלים, עם הדגשה של נקודות המדידה<<<
+\end_layout
+
+\begin_layout Standard
+הרכבנו מעגל כמתואר באיור, מדדנו את המתחים >
+\numeric on
+1
+\numeric off
+<, >
+\numeric on
+2
+\numeric off
+< מהם חישבנו את הזרמים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1,2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפי __
+\end_layout
+
+\begin_layout Standard
+בחרנו רכיבים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+123
+\numeric off
+, הוספנו למעגל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נגד שתפקידו לאזן את ההתנגדות הפנימית של ספק המתח.
+\end_layout
+
+\begin_layout Standard
+יש למעגלים הארקה משותפת, היא ההארקה של מכשיר המדידה.
+ זה בסדר כי משהו
+\end_layout
+
+\begin_layout Subsubsection*
+מדידת מקדם השראות הדדית כתלות בתדרי הרזוננס
+\end_layout
+
+\begin_layout Standard
+הרחקנו בלה בלה, מדדנו את כל אחד מתדרי הרזוננס כתלות במרחק.
+\end_layout
+
+\begin_layout Subsubsection*
+מדידת מקדם השראות הדדית כתלות במרחק)?(
+\end_layout
+
+\begin_layout Section*
+מהלך הניסוי - הכותרת כוסתה בנושא מערכת הניסוי ומהלך הניסוי
 \end_layout
 
 \begin_layout Part*
 תוצאות
 \end_layout
 
-\begin_layout Standard
-היגב תדר של צימוד קיבולי + התאמה של תדר מקסימלי/רוחב אונה (Q factor) היגב
- תדר של צימוד השראותי + התאמה של תדר מקסימלי/רוחב אונה (Q factor) מדידת
- הצימוד ההשראותי במרחקים שונים לפי תדרי רזוננס מדידת הצימוד ההשראותי במרחקים
- שונים לפי היגב בתדר מסויים (שני תדרים) 
-\end_layout
-
 \begin_layout Section*
 צימוד קיבולי
 \end_layout
 
+\begin_layout Standard
+תוצאות ציר זמן - אם יש כאלה
+\end_layout
+
+\begin_layout Standard
+היגב תדר של צימוד קיבולי + התאמה של תדר מקסימלי/רוחב אונה + מקדם 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 צימוד השראותי
+\end_layout
+
+\begin_layout Standard
+היגב תדר של צימוד השראותי + התאמה של תדר מקסימלי/רוחב אונה + מקדם 
+\begin_inset Formula $Q$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -178,12 +670,27 @@ RLC
 <<<מדידה על פי תדרי "רזוננס"
 \end_layout
 
+\begin_layout Standard
+מדידת הצימוד ההשראותי במרחקים שונים לפי תדרי רזוננס.
+\end_layout
+
 \begin_layout Subsection*
 <<<מדידה על פי עוצמה בתדרים שונים
 \end_layout
 
+\begin_layout Standard
+מדידת הצימוד ההשראותי במרחקים שונים לפי עצמת ההיגב בשני תדרים קבועים לאורך
+ המדידה.
+\end_layout
+
 \begin_layout Part*
 סיכום ומסקנות
+\end_layout
+
+\begin_layout Standard
+צימוד השראותי - משהו עם זה שהמעגל השני הוא "טפיל" על הראשון.
+ כאשר מתרחקים הראשון מתנהג כמו משדר.
+ כלומר, יש העברה הלוך פעם אחת, אבל לא חזור.
 \end_layout
 
 \begin_layout Part*
