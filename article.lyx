@@ -86,7 +86,63 @@
 \end_layout
 
 \begin_layout Standard
->>>עכבה, תופעות חשמליות, נגד, סליל, קבל, מקור<<<
+במעגלים חשמליים משתמשים בשלושה רכיבים נפוצים: נגד, סליל )משרן(, קבל.
+ המתח בין קצותיהם נתון לפי:
+\begin_inset Formula 
+\[
+V_{R}=IR,V_{c}=\frac{1}{c}Q,V_{L}=L\dot{I}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $R$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $L$
+\end_inset
+
+ הם התנגדות הנגד, קיבול הקבל, השראות העצמית של הסליל קבועים המתארים את כל
+ אחד מהרכיבים.
+ ו- 
+\begin_inset Formula $Q$
+\end_inset
+
+ המטען האגור על אחד מצידי הקבל, 
+\begin_inset Formula $I$
+\end_inset
+
+ הזרם דרך הנגד או הסליל.
+ כאשר הזרם הזורם דרך רכיב הוא זרם חילופין: 
+\begin_inset Formula $I=I(t)=I_{0}\cdot\exp(i\omega t)$
+\end_inset
+
+, הנוסחאות הללו ניתנות להצגה באמצעות עכבה 
+\begin_inset Formula $Z$
+\end_inset
+
+ לפי: 
+\begin_inset Formula $V=ZI$
+\end_inset
+
+ כאשר:
+\begin_inset Formula 
+\[
+Z_{R}=R,Z_{C}=\frac{1}{i\omega c},Z_{L}=i\omega L
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -133,7 +189,7 @@ RLC
 
 \begin_layout Standard
 שרטוט מעגל + היגב למתח מאלץ, משוואה, פיתרון מד"ר, פיתרון עכבות.
- תחום של ריסון חלש.
+ תחום של ריסון חלש - בעצם לא מתאים למקרה שלנו, שבו יש אילוץ.
  רזוננס.
  מקדם 
 \begin_inset Formula $Q$
