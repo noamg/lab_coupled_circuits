@@ -184,7 +184,8 @@ RLC
 \noun off
 \color none
 \lang hebrew
- >>>אפשר לוותר?<<<
+ 
+/ ניתוח כללי של אוסילטור מאולץ >>>אפשר לוותר?<<<
 \end_layout
 
 \begin_layout Standard
@@ -193,6 +194,46 @@ RLC
  רזוננס.
  מקדם 
 \begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואת קירכהוף:
+\begin_inset Formula 
+\[
+V=V_{R}+V_{C}+V_{L}=I(Z_{R}+Z_{C}+Z_{L})=I(R+\frac{1}{i\omega C}+i\omega L)\Rightarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=\frac{V}{R+\frac{1}{i\omega C}+i\omega L}\Rightarrow|I|=\frac{V_{0}\omega}{\sqrt{4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{0}^{2}\right)^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר נגדיר: 
+\begin_inset Formula $\omega_{0}=\sqrt{\frac{1}{LC}}$
+\end_inset
+
+,
+\begin_inset Formula $\alpha=\frac{R}{2L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחת הקירוב של שיכוך חלש מקבלים בסדר ראשון 
+\begin_inset Formula $\omega_{res}=\omega_{0}$
 \end_inset
 
 
