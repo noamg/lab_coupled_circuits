@@ -81,8 +81,791 @@
 רקע תיאורטי
 \end_layout
 
+\begin_layout Section*
+רכיבים במעגל חשמלי
+\end_layout
+
+\begin_layout Standard
+במעגלים חשמליים משתמשים בשלושה רכיבים נפוצים: נגד, סליל )משרן(, קבל.
+ המתח בין קצותיהם נתון לפי:
+\begin_inset Formula 
+\[
+V_{R}=IR,V_{c}=\frac{1}{c}Q,V_{L}=L\dot{I}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $R$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $L$
+\end_inset
+
+ הם התנגדות הנגד, קיבול הקבל, השראות העצמית של הסליל קבועים המתארים את כל
+ אחד מהרכיבים.
+ ו- 
+\begin_inset Formula $Q$
+\end_inset
+
+ המטען האגור על אחד מצידי הקבל, 
+\begin_inset Formula $I$
+\end_inset
+
+ הזרם דרך הנגד או הסליל.
+ כאשר הזרם הזורם דרך רכיב הוא זרם חילופין: 
+\begin_inset Formula $I=I(t)=I_{0}\cdot\exp(i\omega t)$
+\end_inset
+
+, הנוסחאות הללו ניתנות להצגה באמצעות עכבה 
+\begin_inset Formula $Z$
+\end_inset
+
+ לפי חוק אוהם: 
+\begin_inset Formula $V=ZI$
+\end_inset
+
+ .
+ העכבות נתונות לפי:
+\begin_inset Formula 
+\begin{equation}
+Z_{R}=R,Z_{C}=\frac{1}{i\omega c},Z_{L}=i\omega L\label{eq:RLC impedance}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מעגלי
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RLC
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+/ ניתוח כללי של אוסילטור מאולץ >>>אפשר לוותר?<<<
+\end_layout
+
+\begin_layout Standard
+מעגל 
+\begin_inset Formula $RLC$
+\end_inset
+
+ מאולץ מורכב מנגד, קבל, סליל ומקור מתח כפי שרואים באיור >>><<<.כאשר המתח
+ המאלץ הינו סינוסואידלי: 
+\begin_inset Formula $V(t)=V_{0}\exp(-i\omega t)$
+\end_inset
+
+, המתחים על הרכיבים השונים נתונים לפי חוק אוהם ונוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RLC impedance"
+
+\end_inset
+
+.
+ לפי חוק קירכהוף )המבטא שימור אנרגיה( סכום המתחים במעגל מתאפס ולכן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{0}\exp(-i\omega t)=V(t)=V_{R}+V_{C}+V_{L}=I(Z_{R}+Z_{C}+Z_{L})=I(R+\frac{1}{i\omega C}+i\omega L)\Rightarrow\label{eq:RLC kirchhoff}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+I=\frac{V_{0}}{R+\frac{1}{i\omega C}+i\omega L}\exp(-i\omega t)\Rightarrow I(t)=\frac{V_{0}\omega}{\sqrt{4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{0}^{2}\right)^{2}}}\exp(-i\omega t-i\phi)\label{eq:RLC solution}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר מגדירים: 
+\begin_inset Formula $\omega_{0}=\sqrt{\frac{1}{LC}}$
+\end_inset
+
+,
+\begin_inset Formula $\alpha=\frac{R}{2L}$
+\end_inset
+
+, 
+\begin_inset Formula $tg(\phi)=\frac{\frac{1}{\omega c}+\omega L}{R}=\frac{\omega^{2}+\omega_{0}^{2}}{2\alpha\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העקומה 
+\begin_inset Formula $|I|(\omega)$
+\end_inset
+
+ היא תגובת התדר של המעגל.
+ איור >>>?<<<.
+\end_layout
+
+\begin_layout Standard
+רזוננס.
+ _____ תחת הקירוב של שיכוך חלש מקבלים בסדר ראשון 
+\begin_inset Formula $\omega_{res}=\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוחב עקומה _____
+\end_layout
+
+\begin_layout Standard
+מקדם 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אולי להכניס את הנוסחא האמיתית של הפאזה שמתקבלת כדי שניתן יהיה להראות שהיסט
+ הפאזה זניח.
+\end_layout
+
+\begin_layout Standard
+הערה: עבור המטען על הקבל 
+\begin_inset Formula $Q_{c}$
+\end_inset
+
+ מתנהג כמו אוסילטור הרמוני מאולץ.
+\end_layout
+
+\begin_layout Standard
+זבל ישן:
+\end_layout
+
+\begin_layout Standard
+שרטוט מעגל + היגב למתח מאלץ, משוואה, פיתרון מד"ר, פיתרון עכבות.
+ תחום של ריסון חלש - בעצם לא מתאים למקרה שלנו, שבו יש אילוץ.
+ רזוננס.
+ מקדם 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואת קירכהוף:
+\end_layout
+
+\begin_layout Section*
+צימוד קיבולי של מעגלי 
+\begin_inset Formula $RLC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לצמד מעגלי 
+\begin_inset Formula $RLC$
+\end_inset
+
+ באמצעות קבל, כפי שרואים באיור >>><<<.
+\end_layout
+
+\begin_layout Standard
+לפי משוואות קירכהוף על שתי לולאות הזרם הפנימיות נקבל:
+\begin_inset Formula 
+\[
+V(t)=I_{1}(R_{1}+\frac{1}{i\omega C_{1}}+i\omega L_{1})+(I_{1}-I_{2})\frac{1}{i\omega C'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=I_{2}(R_{1}+\frac{1}{i\omega C_{1}}+i\omega L_{1})-(I_{1}-I_{2})\frac{1}{i\omega C'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן כללי ניתן ללכסן את הבעיה: כלומר, למצוא שני צירופים לינאריים של 
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+ שכל אחד מהם מקיים משוואת מעגל 
+\begin_inset Formula $RLC$
+\end_inset
+
+ מאולץ )בדומה למשוואה 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RLC kirchhoff"
+
+\end_inset
+
+(.
+ במקרה הפרטי הפשוט 
+\begin_inset Formula $R=R_{1}=R_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $C=C_{1}=C_{2}$
+\end_inset
+
+,
+\begin_inset Formula $L=L_{1}=L_{2}$
+\end_inset
+
+, נקבל זאת עבור 
+\begin_inset Formula $I_{+}=I_{1}+I_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{-}=I_{1}-I_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{0}\exp(-i\omega t)=I_{+}(R+\frac{1}{i\omega C}+i\omega L)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V_{0}\exp(-i\omega t)=I_{-}(R+\frac{1}{i\omega C_{3}}+i\omega L);\frac{1}{C_{3}}=\frac{1}{C}+\frac{2}{C'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הזרמים הפיקטיביים 
+\begin_inset Formula $I_{+},I_{-}$
+\end_inset
+
+ ניתנים לפיתרון לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RLC solution"
+
+\end_inset
+
+.
+ בעזרת 
+\begin_inset Formula $I_{+},I_{-}$
+\end_inset
+
+ ניתן לשחזר את 
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למשל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{1}=\frac{1}{2}(I_{+}+I_{-})=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שרטוט מעגל, משוואות, ניתן ללכסן )לשבור צימוד(.
+ מקרה פרטי נוח - הרכיבים של המעגלים זהים זה.
+ ליכסון טריוויאלי 
+\begin_inset Formula $I_{+},I_{-}$
+\end_inset
+
+.
+ משפט על זה שאין באמת זרם כזה, תיאור מתמטי.
+\end_layout
+
+\begin_layout Standard
+מקבלים משוואות אוסילטור הרמוני.
+ פיתרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, פיתרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ תדרי רזוננס.
+\end_layout
+
+\begin_layout Standard
+צימוד חלש - תדרי תהודה קרובים.
+ נוסחאות.
+\end_layout
+
+\begin_layout Section*
+צימוד השראותי של מעגלי 
+\begin_inset Formula $RLC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שרטוט מעגל.
+ מנגנון פיסיקלי: השראות הדדית, חוק פאראדיי.
+\end_layout
+
+\begin_layout Standard
+משוואות, ליכסון?
+\end_layout
+
+\begin_layout Standard
+פתרונות.
+\end_layout
+
 \begin_layout Part*
-מערכת הניסוי
+מערכת הניסוי ומהלך הניסוי
+\end_layout
+
+\begin_layout Subsection*
+צימוד קיבולי
+\end_layout
+
+\begin_layout Standard
+>>>תמונות של המעגלים, עם הדגשה של נקודות המדידה<<<
+\end_layout
+
+\begin_layout Standard
+הרכבנו מעגל כמתואר באיור, מדדנו את המתחים >
+\numeric on
+1
+\numeric off
+<, >
+\numeric on
+2
+\numeric off
+< מהם חישבנו את הזרמים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1,2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפי __
+\end_layout
+
+\begin_layout Standard
+בחרנו רכיבים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+123
+\numeric off
+, הוספנו למעגל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נגד שתפקידו לאזן את ההתנגדות הפנימית של ספק המתח.
+\end_layout
+
+\begin_layout Subsection*
+צימוד השראותי
+\end_layout
+
+\begin_layout Standard
+>>>תמונות של המעגלים, עם הדגשה של נקודות המדידה<<<
+\end_layout
+
+\begin_layout Standard
+הרכבנו מעגל כמתואר באיור, מדדנו את המתחים >
+\numeric on
+1
+\numeric off
+<, >
+\numeric on
+2
+\numeric off
+< מהם חישבנו את הזרמים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1,2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפי __
+\end_layout
+
+\begin_layout Standard
+בחרנו רכיבים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+123
+\numeric off
+, הוספנו למעגל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נגד שתפקידו לאזן את ההתנגדות הפנימית של ספק המתח.
+\end_layout
+
+\begin_layout Standard
+יש למעגלים הארקה משותפת, היא ההארקה של מכשיר המדידה.
+ זה בסדר כי משהו
+\end_layout
+
+\begin_layout Subsubsection*
+מדידת מקדם השראות הדדית כתלות בתדרי הרזוננס
+\end_layout
+
+\begin_layout Standard
+הרחקנו בלה בלה, מדדנו את כל אחד מתדרי הרזוננס כתלות במרחק.
+\end_layout
+
+\begin_layout Subsubsection*
+מדידת מקדם השראות הדדית כתלות במרחק)?(
+\end_layout
+
+\begin_layout Section*
+מהלך הניסוי - הכותרת כוסתה בנושא מערכת הניסוי ומהלך הניסוי
 \end_layout
 
 \begin_layout Part*
@@ -93,8 +876,28 @@
 צימוד קיבולי
 \end_layout
 
+\begin_layout Standard
+תוצאות ציר זמן - אם יש כאלה
+\end_layout
+
+\begin_layout Standard
+היגב תדר של צימוד קיבולי + התאמה של תדר מקסימלי/רוחב אונה + מקדם 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 צימוד השראותי
+\end_layout
+
+\begin_layout Standard
+היגב תדר של צימוד השראותי + התאמה של תדר מקסימלי/רוחב אונה + מקדם 
+\begin_inset Formula $Q$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -105,16 +908,27 @@
 <<<מדידה על פי תדרי "רזוננס"
 \end_layout
 
+\begin_layout Standard
+מדידת הצימוד ההשראותי במרחקים שונים לפי תדרי רזוננס.
+\end_layout
+
 \begin_layout Subsection*
 <<<מדידה על פי עוצמה בתדרים שונים
 \end_layout
 
 \begin_layout Standard
-
+מדידת הצימוד ההשראותי במרחקים שונים לפי עצמת ההיגב בשני תדרים קבועים לאורך
+ המדידה.
 \end_layout
 
 \begin_layout Part*
 סיכום ומסקנות
+\end_layout
+
+\begin_layout Standard
+צימוד השראותי - משהו עם זה שהמעגל השני הוא "טפיל" על הראשון.
+ כאשר מתרחקים הראשון מתנהג כמו משדר.
+ כלומר, יש העברה הלוך פעם אחת, אבל לא חזור.
 \end_layout
 
 \begin_layout Part*

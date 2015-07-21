@@ -1,0 +1,11 @@
+
+capacitor coupled RLC
+
+sum - plain RLC:
+fitted a*(2*pi*x)*((4*(2*pi*x)*c^2+((2*pi*x)^2-b^2)^2)^-0.5)
+a = 2.636e4 ± 600
+b = 109.4 ± 0.1 (ressonance)
+c = 37.75 ± 0.34 (alpha)
+
+just I1 - coupled:
+a*(2*pi*x)*((4*(2*pi*x)*b^2+((2*pi*x)^2-c^2)^2)^-0.5+(4*(2*pi*x)*b^2+((2*pi*x)^2-c^2-d^2)^2)^-0.5)
