@@ -185,7 +185,8 @@ RLC
 \noun off
 \color none
 \lang hebrew
- / ניתוח כללי של אוסילטור מאולץ >>>אפשר לוותר?<<<
+ 
+/ ניתוח כללי של אוסילטור מאולץ >>>אפשר לוותר?<<<
 \end_layout
 
 \begin_layout Standard
@@ -220,7 +221,7 @@ V_{0}\exp(-i\omega t)=V(t)=V_{R}+V_{C}+V_{L}=I(Z_{R}+Z_{C}+Z_{L})=I(R+\frac{1}{i
 
 \begin_inset Formula 
 \begin{equation}
-I=\frac{V_{0}}{R+\frac{1}{i\omega C}+i\omega L}\exp(-i\omega t)\Rightarrow I(t)=\frac{V_{0}\omega}{L\sqrt{4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{0}^{2}\right)^{2}}}\exp(-i\omega t-i\phi)\label{eq:RLC solution}
+I=\frac{V_{0}}{R+\frac{1}{i\omega C}+i\omega L}\exp(-i\omega t)\Rightarrow I(t)=\frac{V_{0}\omega}{\sqrt{4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{0}^{2}\right)^{2}}}\exp(-i\omega t-i\phi)\label{eq:RLC solution}
 \end{equation}
 
 \end_inset
@@ -435,25 +436,9 @@ reference "eq:RLC solution"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(\frac{1}{R+i\omega L+\frac{1}{i\omega C}}+\frac{1}{R+i\omega L+\frac{1}{i\omega C_{3}}}\right)
+I_{1}=\frac{1}{2}(I_{+}+I_{-})=
 \]
 
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\Rightarrow I_{1}=\frac{V_{0}\exp\left(-i\omega t-i\phi\right)}{2L}\left(\left(4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{0}^{2}\right)^{2}\right)^{-\frac{1}{2}}+\left(4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{0}^{2}-2\omega_{\Delta}^{2}\right)^{2}\right)^{-\frac{1}{2}}\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-כאשר 
-\begin_inset Formula $\omega_{\Delta}=\frac{1}{\sqrt{LC'}}$
 \end_inset
 
 
