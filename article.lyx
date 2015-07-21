@@ -846,6 +846,14 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \end_layout
 
 \begin_layout Standard
+הקשר בין תדרי הרזוננס לבין 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 >>>הזרם בסליל
 \family roman
 \series medium
@@ -954,23 +962,6 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 משתנה בזמן, הוא יוצר שינוי בשטף המגנטי<<<.
 \end_layout
 
-\begin_layout Standard
-לפי משוואות קירכהוף על שתי לולאות הזרם הפנימיות נקבל:
-\end_layout
-
-\begin_layout Standard
-שרטוט מעגל.
- מנגנון פיסיקלי: השראות הדדית, חוק פאראדיי.
-\end_layout
-
-\begin_layout Standard
-משוואות, ליכסון?
-\end_layout
-
-\begin_layout Standard
-פתרונות.
-\end_layout
-
 \begin_layout Part*
 מערכת הניסוי ומהלך הניסוי
 \end_layout
@@ -984,146 +975,49 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \end_layout
 
 \begin_layout Standard
-הרכבנו מעגל כמתואר באיור, מדדנו את המתחים >
-\numeric on
-1
-\numeric off
-<, >
-\numeric on
-2
-\numeric off
-< מהם חישבנו את הזרמים
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-1,2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-לפי __
+הרכבנו מעגל כמתואר באיור >>><<<.
+ בחרנו רכיבים זהים בשני המעגלים בערכים: ___.
+ הנגד 
+\begin_inset Formula $R_{c}=50[\Omega]$
+\end_inset
+
+ שווה להתנגדות הפנימית של מקור המתח.
+ בחרנו 
+\begin_inset Formula $C'\gg C$
+\end_inset
+
+ כדי לקבל מערכת בתנאי צימוד חלש.
 \end_layout
 
 \begin_layout Standard
-בחרנו רכיבים
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+על מנת לחשב את תגובת התדר של הזרם במעגל: עבור תדרים של מקור המתח בתחום 
+\begin_inset Formula $--[\frac{rad}{sec}]<\omega<--[\frac{rad}{sec}]$
+\end_inset
+
+מדדנו את המתחים 
+\begin_inset Formula $V_{a},V_{a+b}$
+\end_inset
+
+ באמצעות האוסילוסקופ המופיע באיור.
+ מהמתחים הללו חישבנו את הזרמים 
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+ לפי: 
+\begin_inset Formula $I_{1}=\frac{V_{a}}{R_{a}},I_{2}=\frac{V_{a+b}-V_{a}}{R_{b}}$
+\end_inset
+
+.
+ כיוון ש- 
+\begin_inset Formula $R_{a}=R_{b}$
+\end_inset
+
+ מתקבל חישוב ישיר של: 
+\begin_inset Formula $I_{+}=I_{1}+I_{2}=\frac{V_{a+b}}{R_{a}}$
+\end_inset
+
+.
  
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-123
-\numeric off
-, הוספנו למעגל
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-נגד שתפקידו לאזן את ההתנגדות הפנימית של ספק המתח.
 \end_layout
 
 \begin_layout Subsection*
@@ -1135,151 +1029,43 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \end_layout
 
 \begin_layout Standard
-הרכבנו מעגל כמתואר באיור, מדדנו את המתחים >
-\numeric on
-1
-\numeric off
-<, >
-\numeric on
-2
-\numeric off
-< מהם חישבנו את הזרמים
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-1,2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-לפי __
+הרכבנו מעגל כמתואר באיור >>><<<.
+ בחרנו רכיבים זהים בשני המעגלים בערכים: ___.
+ הנגד 
+\begin_inset Formula $R_{c}=50[\Omega]$
+\end_inset
+
+ שווה להתנגדות הפנימית של מקור המתח.
+ הסלילים בעלי ציר משותף, ולכן ההשראות ההדדית 
+\begin_inset Formula $M$
+\end_inset
+
+ תלויה במרחק הסלילים זה מזה.
+ בשלב הראשון מדדנו את תגובת התדר של הזרם במעגל במרחק קבוע: עבור תדרים של
+ מקור המתח בתחום 
+\begin_inset Formula $--[\frac{rad}{sec}]<\omega<--[\frac{rad}{sec}]$
+\end_inset
+
+מדדנו את המתחים 
+\begin_inset Formula $V_{a},V_{b}$
+\end_inset
+
+ באמצעות האוסילוסקופ המופיע באיור.
+ מהמתחים הללו חישבנו את הזרמים 
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+ לפי: 
+\begin_inset Formula $I_{1}=\frac{V_{a}}{R_{a}},I_{2}=\frac{V_{b}}{R_{b}}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-בחרנו רכיבים
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-123
-\numeric off
-, הוספנו למעגל
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-נגד שתפקידו לאזן את ההתנגדות הפנימית של ספק המתח.
-\end_layout
-
-\begin_layout Standard
-יש למעגלים הארקה משותפת, היא ההארקה של מכשיר המדידה.
- זה בסדר כי משהו
+כפי שרואים באיור, לשני המעגלים יש הארקה משותפת )ההארקה של האוסילוסקופ(.
+ דבר זה אינו משפיע על המדידה, כיוון שמדובר באילוץ של שיוויון פוטנציאלים
+ חשמליים בין המעגלים בנקודה יחידה.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1287,7 +1073,9 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \end_layout
 
 \begin_layout Standard
-הרחקנו בלה בלה, מדדנו את כל אחד מתדרי הרזוננס כתלות במרחק.
+בשלב השני של הניסוי, שינינו את המרחק __ בין הסלילים.
+ בכל מרחק, מצאנו את תדר הרזוננס.
+ הרחקנו בלה בלה, מדדנו את כל אחד מתדרי הרזוננס כתלות במרחק.
 \end_layout
 
 \begin_layout Subsubsection*
