@@ -8,9 +8,11 @@ b = 109.4 ± 0.1 (ressonance)
 c = 37.75 ± 0.34 (alpha)
 
 just I1 - coupled:
-a*(2*pi*x)*((4*(2*pi*x)*b^2+((2*pi*x)^2-c^2)^2)^-0.5+(4*(2*pi*x)*b^2+((2*pi*x)^2-c^2-d^2)^2)^-0.5)   [redo]
-
-
+a*(2*pi*x)*((4*(2*pi*x)*b^2+((2*pi*x)^2-c^2)^2)^-0.5+(4*(2*pi*x)*b^2+((2*pi*x)^2-c^2-2*d^2)^2)^-0.5)
+a = 9921 ± 1100
+b = 36.3 ± 7.6 (alpha)  
+c = 94.75 ± 1 (ressonance)
+d = 41.4 ±  (omega delta)
 
 
 Inductor coupled RLC (freq in Hz  - omega in Rad/sec)
@@ -21,3 +23,10 @@ a = 3.559e4 ± 8e3
 b = 8.58e4 ± 3e4 (alpha)
 c = 3.89e4 ± 2e2 (ressonance)
 d = 0.188 ± 8e-3 (mutual inductance factor k)
+
+I2
+fitted a*(2*pi*x)*((4*(2*pi*x)*b^2+((2*pi*x)^2*(1-d)-c^2)^2)^-0.5+(4*(2*pi*x)*b^2+((2*pi*x)^2*(1+d)-c^2)^2)^-0.5)
+a = 3.605e4 ± 2.5e3
+b = 8.76e4 ± 0.9e4 (alpha)
+c = 3.898e4 ± 5e2 (ressonance)
+d = 0.1827 ± 2.5e-3 (mutual inductance factor k)
