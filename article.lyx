@@ -77,6 +77,18 @@
 מעגלים מצומדים טובים למשהו, מה עשינו, מה למדנו
 \end_layout
 
+\begin_layout Section*
+נותר לעשות>>><<<
+\end_layout
+
+\begin_layout Standard
+להחליף 
+\begin_inset Formula $\exp(-i\omega t)\Rightarrow\exp(i\omega t)$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part*
 רקע תיאורטי
 \end_layout
@@ -229,16 +241,12 @@ I=\frac{V_{0}}{R+\frac{1}{i\omega C}+i\omega L}\exp(-i\omega t)\Rightarrow I(t)=
 \end_layout
 
 \begin_layout Standard
-כאשר מגדירים: 
-\begin_inset Formula $\omega_{0}=\sqrt{\frac{1}{LC}}$
-\end_inset
+כאשר מגדירים:
+\begin_inset Formula 
+\begin{equation}
+\omega_{0}=\sqrt{\frac{1}{LC}};\alpha=\frac{R}{2L};tg(\phi)=\frac{\frac{1}{\omega c}+\omega L}{R}=\frac{\omega^{2}+\omega_{0}^{2}}{2\alpha\omega}\label{eq:RLC_definitions_w_o_alpha_phi}
+\end{equation}
 
-,
-\begin_inset Formula $\alpha=\frac{R}{2L}$
-\end_inset
-
-, 
-\begin_inset Formula $tg(\phi)=\frac{\frac{1}{\omega c}+\omega L}{R}=\frac{\omega^{2}+\omega_{0}^{2}}{2\alpha\omega}$
 \end_inset
 
 
@@ -396,7 +404,7 @@ V_{0}\exp(-i\omega t)=I_{+}(R+\frac{1}{i\omega C}+i\omega L)
 
 \begin_inset Formula 
 \[
-V_{0}\exp(-i\omega t)=I_{-}(R+\frac{1}{i\omega C_{3}}+i\omega L);\frac{1}{C_{3}}=\frac{1}{C}+\frac{2}{C'}
+V_{0}\exp(-i\omega t)=I_{-}(R+\frac{1}{i\omega\tilde{C}}+i\omega L);\frac{1}{_{\tilde{C}}}=\frac{1}{C}+\frac{2}{C'}
 \]
 
 \end_inset
@@ -435,7 +443,7 @@ reference "eq:RLC solution"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(\frac{1}{R+i\omega L+\frac{1}{i\omega C}}+\frac{1}{R+i\omega L+\frac{1}{i\omega C_{3}}}\right)
+I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(\frac{1}{R+i\omega L+\frac{1}{i\omega C}}+\frac{1}{R+i\omega L+\frac{1}{i\omega\tilde{C}}}\right)
 \]
 
 \end_inset
@@ -443,7 +451,7 @@ I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(
 
 \begin_inset Formula 
 \[
-\Rightarrow I_{1}=\frac{V_{0}\exp\left(-i\omega t-i\phi\right)}{2L}\left(\left(4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{0}^{2}\right)^{2}\right)^{-\frac{1}{2}}+\left(4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{0}^{2}-2\omega_{\Delta}^{2}\right)^{2}\right)^{-\frac{1}{2}}\right)
+\Rightarrow I_{1}=\frac{V_{0}\exp\left(-i\omega t-i\frac{\phi+\tilde{\phi}}{2}\right)}{L}cos\left(\frac{\phi-\tilde{\phi}}{2}\right)\left(\left(4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{0}^{2}\right)^{2}\right)^{-\frac{1}{2}}+\left(4\alpha^{2}\omega^{2}+\left(\omega^{2}-\tilde{\omega}^{2}\right)^{2}\right)^{-\frac{1}{2}}\right)
 \]
 
 \end_inset
@@ -452,11 +460,82 @@ I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(
 \end_layout
 
 \begin_layout Standard
-כאשר 
+כאשר >>>
 \begin_inset Formula $\omega_{\Delta}=\frac{1}{\sqrt{LC'}}$
 \end_inset
 
+<<< 
+\begin_inset Formula $\tilde{\omega},\tilde{\phi}$
+\end_inset
 
+ מוגדרים לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RLC_definitions_w_o_alpha_phi"
+
+\end_inset
+
+ ע"י 
+\begin_inset Formula $\tilde{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במקרה של צימוד חלש: 
+\begin_inset Formula $C'\gg C\Rightarrow C\approx\tilde{C}\Rightarrow\phi\approx\tilde{\phi}$
+\end_inset
+
+ נקבל שהקוסינוס לעיל נותן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+כמו כן )צימוד חלש( מתקבלים שני רזוננסים קרובים בתדרים: ____,____
+\end_layout
+
+\begin_layout Standard
+אולי הנחה נוספת על הרכיבים כדי שלא יתאחדו הרזוננסים ______
+\end_layout
+
+\begin_layout Standard
+מקרה שני במקרה _____ מתקבלים שני רזוננסים )כצפוי, רזוננס עבור כל אחד מ-
+ 
+\begin_inset Formula $I_{+},I_{-}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+>>><<<
 \end_layout
 
 \begin_layout Standard
@@ -544,16 +623,343 @@ I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(
 \end_layout
 
 \begin_layout Standard
-שרטוט מעגל.
- מנגנון פיסיקלי: השראות הדדית, חוק פאראדיי.
+ניתן לצמד מעגלי 
+\begin_inset Formula $RLC$
+\end_inset
+
+ באמצעות השראות הדדית, כפי שרואים באיור >>><<<.
 \end_layout
 
 \begin_layout Standard
-משוואות, ליכסון?
+הצימוד במערך זה, נובע מחוק פאראדיי: שינוי בשטף המגנטי העובר דרך תיל מוליך
+ מלופף יוצר כא"מ 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ בתיל: 
+\begin_inset Formula $-\frac{\partial\Phi_{B}}{\partial t}=\epsilon$
+\end_inset
+
+.
+ עבור שני תיילים בגיאומטריה קבועה, חוק זה מתבטא בתור 
+\begin_inset Formula $M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}$
+\end_inset
+
+.
+ כאשר 
+\begin_inset Formula $M$
+\end_inset
+
+ הוא קבוע ההשראות ההדדית, והוא תלוי בגיאומטריה של המערכת.
 \end_layout
 
 \begin_layout Standard
-פתרונות.
+חוקי קירכהוף עבור שני המעגלים ייתנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(t)=I_{1}(R_{1}+\frac{1}{i\omega C_{1}}+i\omega L_{1})+I_{2}i\omega M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=I_{2}(R_{1}+\frac{1}{i\omega C_{1}}+i\omega L_{1})+I_{1}i\omega M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו במקרה של צימוד קיבולי, בעיית המשוואות הזאת ניתנת לליכסון.
+ במקרה הפרטי הפשוט 
+\begin_inset Formula $R=R_{1}=R_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $C=C_{1}=C_{2}$
+\end_inset
+
+,
+\begin_inset Formula $L=L_{1}=L_{2}$
+\end_inset
+
+, נקבל זאת עבור 
+\begin_inset Formula $I_{+}=I_{1}+I_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{-}=I_{1}-I_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{0}\exp(-i\omega t)=I_{+}(R+\frac{1}{i\omega C}+i\omega L_{+});L_{+}=L+M
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V_{0}\exp(-i\omega t)=I_{-}(R+\frac{1}{i\omega C}+i\omega L_{-});L_{-}=L-M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הזרמים הפיקטיביים 
+\begin_inset Formula $I_{+},I_{-}$
+\end_inset
+
+ ניתנים לפיתרון לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RLC solution"
+
+\end_inset
+
+.
+ בעזרת 
+\begin_inset Formula $I_{+},I_{-}$
+\end_inset
+
+ ניתן לשחזר את 
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למשל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(\frac{1}{R+i\omega L_{+}+\frac{1}{i\omega C}}+\frac{1}{R+i\omega L_{-}+\frac{1}{i\omega C}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow I_{1}=\frac{V_{0}\exp\left(-i\omega t-i\frac{\phi_{+}+\phi_{-}}{2}\right)}{L}cos\left(\frac{\phi_{+}-\phi_{-}}{2}\right)\left(\left(4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{+}^{2}\right)^{2}\right)^{-\frac{1}{2}}+\left(4\alpha^{2}\omega^{2}+\left(\omega^{2}-\omega_{-}^{2}\right)^{2}\right)^{-\frac{1}{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\omega_{+},\omega_{-},\phi_{+},\phi_{-}$
+\end_inset
+
+ מוגדרים לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:RLC_definitions_w_o_alpha_phi"
+
+\end_inset
+
+ ע"י 
+\begin_inset Formula $L_{+},L_{-}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+>>>להמיר לדברים הנכונים עבור השראות ולא צימוד<<<
+\end_layout
+
+\begin_layout Standard
+במקרה של צימוד חלש: 
+\begin_inset Formula $C'\gg C\Rightarrow C\approx\tilde{C}\Rightarrow\phi\approx\tilde{\phi}$
+\end_inset
+
+ נקבל שהקוסינוס לעיל נותן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+כמו כן )צימוד חלש( מתקבלים שני רזוננסים קרובים בתדרים: ____,____
+\end_layout
+
+\begin_layout Standard
+אולי הנחה נוספת על הרכיבים כדי שלא יתאחדו הרזוננסים ______
+\end_layout
+
+\begin_layout Standard
+מקרה שני במקרה _____ מתקבלים שני רזוננסים )כצפוי, רזוננס עבור כל אחד מ-
+ 
+\begin_inset Formula $I_{+},I_{-}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+הקשר בין תדרי הרזוננס לבין 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+>>>הזרם בסליל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ משרה שדה מגנטי במרחב, שיוצר שטף מגנטי בסליל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ כיוון שהזרם בסליל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משתנה בזמן, הוא יוצר שינוי בשטף המגנטי<<<.
 \end_layout
 
 \begin_layout Part*
@@ -569,146 +975,49 @@ I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(
 \end_layout
 
 \begin_layout Standard
-הרכבנו מעגל כמתואר באיור, מדדנו את המתחים >
-\numeric on
-1
-\numeric off
-<, >
-\numeric on
-2
-\numeric off
-< מהם חישבנו את הזרמים
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-1,2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-לפי __
+הרכבנו מעגל כמתואר באיור >>><<<.
+ בחרנו רכיבים זהים בשני המעגלים בערכים: ___.
+ הנגד 
+\begin_inset Formula $R_{c}=50[\Omega]$
+\end_inset
+
+ שווה להתנגדות הפנימית של מקור המתח.
+ בחרנו 
+\begin_inset Formula $C'\gg C$
+\end_inset
+
+ כדי לקבל מערכת בתנאי צימוד חלש.
 \end_layout
 
 \begin_layout Standard
-בחרנו רכיבים
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+על מנת לחשב את תגובת התדר של הזרם במעגל: עבור תדרים של מקור המתח בתחום 
+\begin_inset Formula $--[\frac{rad}{sec}]<\omega<--[\frac{rad}{sec}]$
+\end_inset
+
+מדדנו את המתחים 
+\begin_inset Formula $V_{a},V_{a+b}$
+\end_inset
+
+ באמצעות האוסילוסקופ המופיע באיור.
+ מהמתחים הללו חישבנו את הזרמים 
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+ לפי: 
+\begin_inset Formula $I_{1}=\frac{V_{a}}{R_{a}},I_{2}=\frac{V_{a+b}-V_{a}}{R_{b}}$
+\end_inset
+
+.
+ כיוון ש- 
+\begin_inset Formula $R_{a}=R_{b}$
+\end_inset
+
+ מתקבל חישוב ישיר של: 
+\begin_inset Formula $I_{+}=I_{1}+I_{2}=\frac{V_{a+b}}{R_{a}}$
+\end_inset
+
+.
  
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-123
-\numeric off
-, הוספנו למעגל
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-נגד שתפקידו לאזן את ההתנגדות הפנימית של ספק המתח.
 \end_layout
 
 \begin_layout Subsection*
@@ -720,151 +1029,43 @@ I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(
 \end_layout
 
 \begin_layout Standard
-הרכבנו מעגל כמתואר באיור, מדדנו את המתחים >
-\numeric on
-1
-\numeric off
-<, >
-\numeric on
-2
-\numeric off
-< מהם חישבנו את הזרמים
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-1,2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-לפי __
+הרכבנו מעגל כמתואר באיור >>><<<.
+ בחרנו רכיבים זהים בשני המעגלים בערכים: ___.
+ הנגד 
+\begin_inset Formula $R_{c}=50[\Omega]$
+\end_inset
+
+ שווה להתנגדות הפנימית של מקור המתח.
+ הסלילים בעלי ציר משותף, ולכן ההשראות ההדדית 
+\begin_inset Formula $M$
+\end_inset
+
+ תלויה במרחק הסלילים זה מזה.
+ >>>האם תמיד צימוד חלש או משהו???<<<.בשלב הראשון מדדנו את תגובת התדר של הזרם
+ במעגל במרחק קבוע: עבור תדרים של מקור המתח בתחום 
+\begin_inset Formula $--[\frac{rad}{sec}]<\omega<--[\frac{rad}{sec}]$
+\end_inset
+
+מדדנו את המתחים 
+\begin_inset Formula $V_{a},V_{b}$
+\end_inset
+
+ באמצעות האוסילוסקופ המופיע באיור.
+ מהמתחים הללו חישבנו את הזרמים 
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+ לפי: 
+\begin_inset Formula $I_{1}=\frac{V_{a}}{R_{a}},I_{2}=\frac{V_{b}}{R_{b}}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-בחרנו רכיבים
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-123
-\numeric off
-, הוספנו למעגל
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-נגד שתפקידו לאזן את ההתנגדות הפנימית של ספק המתח.
-\end_layout
-
-\begin_layout Standard
-יש למעגלים הארקה משותפת, היא ההארקה של מכשיר המדידה.
- זה בסדר כי משהו
+כפי שרואים באיור, לשני המעגלים יש הארקה משותפת )ההארקה של האוסילוסקופ(.
+ דבר זה אינו משפיע על המדידה, כיוון שמדובר באילוץ של שיוויון פוטנציאלים
+ חשמליים בין המעגלים בנקודה יחידה.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -872,7 +1073,42 @@ I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(
 \end_layout
 
 \begin_layout Standard
-הרחקנו בלה בלה, מדדנו את כל אחד מתדרי הרזוננס כתלות במרחק.
+בשלב השני של הניסוי, שינינו את המרחק __ בין הסלילים.
+ בכל מרחק בדקנו את עצמת הזרמים 
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+ הנצפית בסקופ כתלות בתדר, ומדדנו את תדרי הרזוננס.
+ לפי נוסחא ___, מתדרי הרזוננס חישבנו את מקדם ההשראות ההדדית 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+מדידה ישירה של מקדם השראות הדדית באמצעות חוק פאראדיי
+\end_layout
+
+\begin_layout Standard
+על מנת לקבל הערכה נוספת של 
+\begin_inset Formula $M$
+\end_inset
+
+, בכל אחד מהמרחקים מדדנו אותו בדרך נוספת, ישירה יותר.
+ הוצאנו את הקבלים משני המעגלים, ומקור המתח סיפק מתח חילופין.
+ עפ"י חוק פאראדיי שהוזכר לעיל, מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}\Rightarrow M\omega\left|\frac{V_{a}}{R}\right|=|V_{b}|\Rightarrow M=\frac{1}{\omega R}\left|\frac{V_{b}}{V_{a}}\right|
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -925,6 +1161,10 @@ I_{1}=\frac{1}{2}(I_{+}+I_{-})=\frac{1}{2}V_{0}\exp\left(-i\omega t\right)\left(
 
 \begin_layout Standard
 מדידת הצימוד ההשראותי במרחקים שונים לפי תדרי רזוננס.
+\end_layout
+
+\begin_layout Standard
+<<< מדידה ישירה!
 \end_layout
 
 \begin_layout Subsection*
