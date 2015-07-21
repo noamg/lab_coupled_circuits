@@ -1041,8 +1041,8 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \end_inset
 
  תלויה במרחק הסלילים זה מזה.
- בשלב הראשון מדדנו את תגובת התדר של הזרם במעגל במרחק קבוע: עבור תדרים של
- מקור המתח בתחום 
+ >>>האם תמיד צימוד חלש או משהו???<<<.בשלב הראשון מדדנו את תגובת התדר של הזרם
+ במעגל במרחק קבוע: עבור תדרים של מקור המתח בתחום 
 \begin_inset Formula $--[\frac{rad}{sec}]<\omega<--[\frac{rad}{sec}]$
 \end_inset
 
@@ -1074,8 +1074,41 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 
 \begin_layout Standard
 בשלב השני של הניסוי, שינינו את המרחק __ בין הסלילים.
- בכל מרחק, מצאנו את תדר הרזוננס.
- הרחקנו בלה בלה, מדדנו את כל אחד מתדרי הרזוננס כתלות במרחק.
+ בכל מרחק בדקנו את עצמת הזרמים 
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+ הנצפית בסקופ כתלות בתדר, ומדדנו את תדרי הרזוננס.
+ לפי נוסחא ___, מתדרי הרזוננס חישבנו את מקדם ההשראות ההדדית 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+מדידה ישירה של מקדם השראות הדדית באמצעות חוק פאראדיי
+\end_layout
+
+\begin_layout Standard
+על מנת לקבל הערכה נוספת של 
+\begin_inset Formula $M$
+\end_inset
+
+, בכל אחד מהמרחקים מדדנו אותו בדרך נוספת, ישירה יותר.
+ הוצאנו את הקבלים משני המעגלים, ומקור המתח סיפק מתח חילופין.
+ עפ"י חוק פאראדיי שהוזכר לעיל, מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}\Rightarrow M\omega\left|\frac{V_{a}}{R}\right|=|V_{b}|\Rightarrow M=\frac{1}{\omega R}\left|\frac{V_{b}}{V_{a}}\right|
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1128,6 +1161,10 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 
 \begin_layout Standard
 מדידת הצימוד ההשראותי במרחקים שונים לפי תדרי רזוננס.
+\end_layout
+
+\begin_layout Standard
+<<< מדידה ישירה!
 \end_layout
 
 \begin_layout Subsection*
