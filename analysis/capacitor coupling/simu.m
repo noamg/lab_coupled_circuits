@@ -1,7 +1,7 @@
 RLCRes = @(a,w_0,w) w./(4*w.^2*a^2+(w.^2-w_0^2).^2).^0.5;
 CcplRes = @(a,w_0,w_1,w) RLCRes(a,w_0,w)+RLCRes(a,w_1,w);
 
-R = 1e3;
+R = 1e3+50;
 L = 218e-3;
 C = 360e-12;
 C_1 = 639e-12;
