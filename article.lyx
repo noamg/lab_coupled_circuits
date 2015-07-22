@@ -1362,7 +1362,251 @@ M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}\Rightarrow M\omega\left|\frac{V_
 \end_layout
 
 \begin_layout Standard
-תוצאות ציר זמן - אם יש כאלה
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/Isum_RLC_response_fit_withErr_etc.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+היגב תדר של סכום הזרמים במעגל - התנהגות של מעגל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+RLC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פשוט.
+ שגיאה מדידה בתדר זניחה 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תוצאות התאמה: 
+\end_layout
+
+\begin_layout Standard
+הותאמו ערכים של 
+\begin_inset Formula $\omega_{0}=109.4\pm0.1\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $\alpha=3.61\pm0.15\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לעומת ערך חזוי של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\omega_{0}=113.5\pm0.6\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $\alpha=2.39\pm0.07\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/I1_RLC_response_fit_withErr_etc.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+היגב תדר של 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ - ניתן לראות שני שיאים, אחד ממוקם ב-
+\begin_inset Formula $f_{0}=f_{+}\approx18\left[kHz\right]$
+\end_inset
+
+, אך השיא הנוסף ממוקם בתדר נמוך יותר בסתירה לצפי 
+\begin_inset Formula $f_{-}>f_{+}$
+\end_inset
+
+.
+ שגיאה מדידה בתדר זניחה 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תוצאות התאמה: 
+\end_layout
+
+\begin_layout Standard
+הותאמו ערכים של 
+\begin_inset Formula $\omega_{0}=94.7\pm1\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha=3.57\pm0.9\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $\omega_{\Delta}=41.4\pm2\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לעומת ערך חזוי של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\omega_{0}=113.5\pm0.6\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha=2.39\pm0.07\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $\omega_{\Delta}=2.680\pm0.015\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+>>> אם יש צורך, אפשר להוסיף תגובה לאימפולס - תוצאות ציר זמן<<<
 \end_layout
 
 \begin_layout Standard
@@ -1375,6 +1619,112 @@ M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}\Rightarrow M\omega\left|\frac{V_
 
 \begin_layout Section*
 צימוד השראותי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/freqResponseFit_I2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+היגב תדר של 
+\begin_inset Formula $I_{2}$
+\end_inset
+
+ - ניתן לראות שני שיאים מסביב לערך הצפוי של 
+\begin_inset Formula $f_{0}\approx6.1\,\left[kHz\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תוצאות ההתאמה:
+\end_layout
+
+\begin_layout Standard
+הותאמו ערכים של 
+\begin_inset Formula $\omega_{0}=38.98\pm0.5\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha=435\pm45\,\left[\frac{Rad}{sec}\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $K=0.1827\pm0.0025$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לעומת ערך חזוי של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\omega_{0}=38.75\pm0.1\,\left[\frac{kRad}{sec}\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha=620\pm20\,\left[\frac{Rad}{sec}\right]$
+\end_inset
+
+ וערך מדוד )ישירות( של 
+\begin_inset Formula $K=0.11\pm0.005$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1391,6 +1741,182 @@ M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}\Rightarrow M\omega\left|\frac{V_
 
 \begin_layout Subsection*
 <<<מדידה על פי תדרי "רזוננס"
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/freqVsDist.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+תדרים בעלי עוצמת היגב מקסימלית בכל מרחק בין סלילים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהם חושבו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/KVsDist_withDirect.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ערכי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+K
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחושבים ממדידת תדרים בעלי היגב מקסימלי וערכי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+K
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מחושבים ממדידה ישירה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
