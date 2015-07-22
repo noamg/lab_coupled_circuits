@@ -1073,6 +1073,10 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \end_layout
 
 \begin_layout Standard
+>>>איור מרחק בין סלילים<<<
+\end_layout
+
+\begin_layout Standard
 בשלב השני של הניסוי, שינינו את המרחק __ בין הסלילים.
  בכל מרחק בדקנו את עצמת הזרמים 
 \begin_inset Formula $I_{1},I_{2}$
@@ -1097,13 +1101,15 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 
 , בכל אחד מהמרחקים מדדנו אותו בדרך נוספת, ישירה יותר.
  הוצאנו את הקבלים משני המעגלים, ומקור המתח סיפק מתח חילופין.
- עפ"י חוק פאראדיי שהוזכר לעיל, מקבלים:
-\end_layout
+ עפ"י חוק פאראדיי שהוזכר לעיל, מקבלים כא"מ מושרה בין קצות הסליל.
+ תוך התחשבות בהשראות העצמית של סליל 
+\begin_inset Formula $L_{2}$
+\end_inset
 
-\begin_layout Standard
+ נקבל: 
 \begin_inset Formula 
 \[
-M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}\Rightarrow M\omega\left|\frac{V_{a}}{R}\right|=|V_{b}|\Rightarrow M=\frac{1}{\omega R}\left|\frac{V_{b}}{V_{a}}\right|
+V_{b}=\epsilon_{2}=L\frac{\partial I_{2}}{\partial t}-M\frac{\partial I_{1}}{\partial t}=L\frac{V_{b}}{R}\omega-M\frac{V_{a}}{R}\omega\Rightarrow M=\frac{V_{b}}{V_{a}}\left(L-\frac{R}{\omega}\right)
 \]
 
 \end_inset
@@ -1111,12 +1117,20 @@ M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}\Rightarrow M\omega\left|\frac{V_
 
 \end_layout
 
-\begin_layout Subsubsection*
-מדידת מקדם השראות הדדית כתלות במרחק)?(
+\begin_layout Standard
+>>>
+\begin_inset Formula 
+\[
+M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}\Rightarrow M\omega\left|\frac{V_{a}}{R}\right|=|V_{b}|\Rightarrow M=\frac{1}{\omega R}\left|\frac{V_{b}}{V_{a}}\right|
+\]
+
+\end_inset
+
+<<<
 \end_layout
 
-\begin_layout Section*
-מהלך הניסוי - הכותרת כוסתה בנושא מערכת הניסוי ומהלך הניסוי
+\begin_layout Subsubsection*
+מדידת מקדם השראות הדדית כתלות במרחק)?(
 \end_layout
 
 \begin_layout Part*
