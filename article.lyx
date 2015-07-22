@@ -1090,12 +1090,70 @@ M=\frac{1}{C(\omega_{res-1}^{2}+\alpha^{2})}-L;M=L-\frac{1}{C(\omega_{res-2}^{2}
 \end_layout
 
 \begin_layout Standard
->>>תמונות של המעגלים, עם הדגשה של נקודות המדידה<<<
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/c_coupling_2.png
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:c_coupling_with_measure_points"
+
+\end_inset
+
+>>>תמונות של המעגלים, עם הדגשה של נקודות המדידה, ונגדים 
+\begin_inset Formula $R_{a},R_{b}R_{c}$
+\end_inset
+
+<<<
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-הרכבנו מעגל כמתואר באיור >>><<<.
- בחרנו רכיבים זהים בשני המעגלים בערכים: ___.
+הרכבנו מעגל כמתואר באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:c_coupling_with_measure_points"
+
+\end_inset
+
+.
+ בחרנו רכיבים זהים בשני המעגלים בערכים: 
+\begin_inset Formula $R_{a}=R_{b}=1000\pm20[\Omega],C_{1}=C_{2}=360\pm0.4[pF],L_{1}=L_{2}=218\pm1.2[mH],C'=638.8\pm0.1[nF]$
+\end_inset
+
+.
  הנגד 
 \begin_inset Formula $R_{c}=50[\Omega]$
 \end_inset
@@ -1110,10 +1168,10 @@ M=\frac{1}{C(\omega_{res-1}^{2}+\alpha^{2})}-L;M=L-\frac{1}{C(\omega_{res-2}^{2}
 
 \begin_layout Standard
 על מנת לחשב את תגובת התדר של הזרם במעגל: עבור תדרים של מקור המתח בתחום 
-\begin_inset Formula $--[\frac{rad}{sec}]<\omega<--[\frac{rad}{sec}]$
+\begin_inset Formula $3.2[k\frac{rad}{sec}]<\omega<203.5[k\frac{rad}{sec}]$
 \end_inset
 
-מדדנו את המתחים 
+ מדדנו את המתחים 
 \begin_inset Formula $V_{a},V_{a+b}$
 \end_inset
 
@@ -1144,7 +1202,50 @@ M=\frac{1}{C(\omega_{res-1}^{2}+\alpha^{2})}-L;M=L-\frac{1}{C(\omega_{res-2}^{2}
 \end_layout
 
 \begin_layout Standard
->>>תמונות של המעגלים, עם הדגשה של נקודות המדידה<<<
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/l_coupling_inverted.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:l_coupling_with_measurements_points"
+
+\end_inset
+
+>>>תמונות של המעגלים, עם הדגשה של נקודות המדידה + נגד שמקזז את מקור המתח<<<
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
