@@ -159,7 +159,7 @@ Z_{R}=R,Z_{C}=\frac{1}{i\omega c},Z_{L}=i\omega L\label{eq:RLC impedance}
 \end_layout
 
 \begin_layout Section*
-מעגלי
+מעגל
 \family roman
 \series bold
 \shape up
@@ -197,7 +197,57 @@ RLC
 \noun off
 \color none
 \lang hebrew
- / ניתוח כללי של אוסילטור מאולץ >>>אפשר לוותר?<<<
+ מאולץ ע"י מקור מתח
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/RLC_series_circuit_v1.svg.png
+	lyxscale 5
+	scale 5
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל 
+\begin_inset Formula $RLC$
+\end_inset
+
+בעל מקור מתח מאלץ
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:RLC circ"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -205,8 +255,14 @@ RLC
 \begin_inset Formula $RLC$
 \end_inset
 
- מאולץ מורכב מנגד, קבל, סליל ומקור מתח כפי שרואים באיור >>><<<.כאשר המתח
- המאלץ הינו סינוסואידלי: 
+ מאולץ מורכב מנגד, קבל, סליל ומקור מתח כפי שרואים באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RLC circ"
+
+\end_inset
+
+.כאשר המתח המאלץ הינו סינוסואידלי: 
 \begin_inset Formula $V(t)=V_{0}\exp(-i\omega t)$
 \end_inset
 
@@ -257,13 +313,25 @@ I=\frac{V_{0}}{R+\frac{1}{i\omega C}+i\omega L}\exp(-i\omega t)\Rightarrow I(t)=
 \begin_inset Formula $|I|(\omega)$
 \end_inset
 
- היא תגובת התדר של המעגל.
- איור >>>?<<<.
-\end_layout
+ היא תגובת התדר של המעגל, כלומר, מידת היעילות של השפעת המקור בתדר 
+\begin_inset Formula $\omega$
+\end_inset
 
-\begin_layout Standard
-רזוננס.
- _____ תחת הקירוב של שיכוך חלש מקבלים בסדר ראשון 
+ על הזרם 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ עקומת תגובת התדר מאופיינת ברזוננס - תגובה מקסימלית עבור תדר 
+\begin_inset Formula $\omega_{res}$
+\end_inset
+
+.
+ תחת הקירוב של שיכוך חלש: 
+\begin_inset Formula $\omega_{0}\gg\alpha$
+\end_inset
+
+ מקבלים בקירוב: 
 \begin_inset Formula $\omega_{res}=\omega_{0}$
 \end_inset
 
@@ -271,47 +339,28 @@ I=\frac{V_{0}}{R+\frac{1}{i\omega C}+i\omega L}\exp(-i\omega t)\Rightarrow I(t)=
 \end_layout
 
 \begin_layout Standard
-רוחב עקומה _____
-\end_layout
-
-\begin_layout Standard
-מקדם 
+>>>רוחב עקומה _____, מקדם 
 \begin_inset Formula $Q$
 \end_inset
 
-
+ <<<
 \end_layout
 
 \begin_layout Standard
-אולי להכניס את הנוסחא האמיתית של הפאזה שמתקבלת כדי שניתן יהיה להראות שהיסט
- הפאזה זניח.
-\end_layout
-
-\begin_layout Standard
-הערה: עבור המטען על הקבל 
+הערה: המטען על הקבל 
 \begin_inset Formula $Q_{c}$
 \end_inset
 
- מתנהג כמו אוסילטור הרמוני מאולץ.
+ מתנהג בתור אוסילטור הרמוני מאולץ.
 \end_layout
 
 \begin_layout Standard
-זבל ישן:
+>>>זבל ישן:
 \end_layout
 
 \begin_layout Standard
 שרטוט מעגל + היגב למתח מאלץ, משוואה, פיתרון מד"ר, פיתרון עכבות.
- תחום של ריסון חלש - בעצם לא מתאים למקרה שלנו, שבו יש אילוץ.
- רזוננס.
- מקדם 
-\begin_inset Formula $Q$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-משוואת קירכהוף:
+ תחום של ריסון חלש - בעצם לא מתאים למקרה שלנו, שבו יש אילוץ.<<<
 \end_layout
 
 \begin_layout Section*
@@ -327,7 +376,63 @@ I=\frac{V_{0}}{R+\frac{1}{i\omega C}+i\omega L}\exp(-i\omega t)\Rightarrow I(t)=
 \begin_inset Formula $RLC$
 \end_inset
 
- באמצעות קבל, כפי שרואים באיור >>><<<.
+ באמצעות קבל, כפי שרואים באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:coupled_c"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/c_coupling_2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:coupled_c"
+
+\end_inset
+
+זוג מעגלי 
+\begin_inset Formula $RLC$
+\end_inset
+
+ מצומדים ע"י קבל 
+\begin_inset Formula $C'$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -382,7 +487,7 @@ reference "eq:RLC kirchhoff"
 \begin_inset Formula $L=L_{1}=L_{2}$
 \end_inset
 
-, נקבל זאת עבור 
+, נקבל זאת עבור הזרמים הפיקטיביים 
 \begin_inset Formula $I_{+}=I_{1}+I_{2}$
 \end_inset
 
@@ -390,7 +495,8 @@ reference "eq:RLC kirchhoff"
 \begin_inset Formula $I_{-}=I_{1}-I_{2}$
 \end_inset
 
-:
+)כמובן שהזרמים הללו לא בהכרח ניתנים למדידה במעגל, אלא הם כלי מתמטי לניתוח
+ המערכת(:
 \end_layout
 
 \begin_layout Standard
@@ -518,100 +624,40 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \end_layout
 
 \begin_layout Standard
-כמו כן )צימוד חלש( מתקבלים שני רזוננסים קרובים בתדרים: ____,____
+כמו כן מתקבלים שני רזוננסים קרובים בתדרים: 
+\begin_inset Formula $\omega_{res-1}=\sqrt{\omega_{0}^{2}-\alpha^{2}}$
+\end_inset
+
+,
+\begin_inset Formula $\omega_{res-2}=\sqrt{\tilde{\omega}^{2}-\alpha^{2}}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-אולי הנחה נוספת על הרכיבים כדי שלא יתאחדו הרזוננסים ______
+זאת, כמובן בתנאי שיכוך חלש: רוחב הרזוננסים הללו בתגובת התדר קטן דיו ביחס
+ למרחק בין הרזוננסים, כלומר:
 \end_layout
 
 \begin_layout Standard
-מקרה שני במקרה _____ מתקבלים שני רזוננסים )כצפוי, רזוננס עבור כל אחד מ-
- 
+\begin_inset Formula 
+\[
+\left|\mbox{\omega_{res-2}-\omega_{res-1}}\right|\gg\alpha
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+>>>מקרה שני במקרה _____ מתקבלים שני רזוננסים )כצפוי, רזוננס עבור כל אחד
+ מ- 
 \begin_inset Formula $I_{+},I_{-}$
 \end_inset
 
-(.
-\end_layout
-
-\begin_layout Standard
->>><<<
-\end_layout
-
-\begin_layout Standard
-שרטוט מעגל, משוואות, ניתן ללכסן )לשבור צימוד(.
- מקרה פרטי נוח - הרכיבים של המעגלים זהים זה.
- ליכסון טריוויאלי 
-\begin_inset Formula $I_{+},I_{-}$
-\end_inset
-
-.
- משפט על זה שאין באמת זרם כזה, תיאור מתמטי.
-\end_layout
-
-\begin_layout Standard
-מקבלים משוואות אוסילטור הרמוני.
- פיתרון
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-1
-\numeric off
-, פיתרון
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-2
-\numeric off
-.
- תדרי רזוננס.
-\end_layout
-
-\begin_layout Standard
-צימוד חלש - תדרי תהודה קרובים.
- נוסחאות.
+(.<<<
 \end_layout
 
 \begin_layout Section*
@@ -627,7 +673,61 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \begin_inset Formula $RLC$
 \end_inset
 
- באמצעות השראות הדדית, כפי שרואים באיור >>><<<.
+ באמצעות השראות הדדית, כפי שרואים באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:coupled_M"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/l_coupling_inverted.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:coupled_M"
+
+\end_inset
+
+מעגלים מצומדים בצימוד השראותי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -795,7 +895,7 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 
 \begin_layout Standard
 במקרה של צימוד חלש: 
-\begin_inset Formula $C'\gg C\Rightarrow C\approx\tilde{C}\Rightarrow\phi\approx\tilde{\phi}$
+\begin_inset Formula $L\gg M\Rightarrow L_{+}\approx L_{-}\Rightarrow\phi_{+}\approx\phi_{-}$
 \end_inset
 
  נקבל שהקוסינוס לעיל נותן
@@ -829,25 +929,44 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \end_layout
 
 \begin_layout Standard
-כמו כן )צימוד חלש( מתקבלים שני רזוננסים קרובים בתדרים: ____,____
-\end_layout
-
-\begin_layout Standard
-אולי הנחה נוספת על הרכיבים כדי שלא יתאחדו הרזוננסים ______
-\end_layout
-
-\begin_layout Standard
-מקרה שני במקרה _____ מתקבלים שני רזוננסים )כצפוי, רזוננס עבור כל אחד מ-
- 
-\begin_inset Formula $I_{+},I_{-}$
+כמו כן מתקבלים שני רזוננסים קרובים בתדרים: 
+\begin_inset Formula $\omega_{res-1}=\sqrt{\omega_{+}^{2}-\alpha^{2}}$
 \end_inset
 
-(.
+,
+\begin_inset Formula $\omega_{res-2}=\sqrt{\omega_{-}^{2}-\alpha^{2}}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-הקשר בין תדרי הרזוננס לבין 
+זאת, כמובן בתנאי שיכוך חלש: רוחב הרזוננסים הללו בתגובת התדר קטן דיו ביחס
+ למרחק בין הרזוננסים, כלומר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\mbox{\omega_{res-2}-\omega_{res-1}}\right|\gg\alpha
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להפוך את הקשרים הנ"ל ולהביע את 
 \begin_inset Formula $M$
+\end_inset
+
+ כתלות בכל אחד מתדרי הרזוננס:
+\begin_inset Formula 
+\[
+M=\frac{1}{C(\omega_{res-1}^{2}+\alpha^{2})}-L;M=L-\frac{1}{C(\omega_{res-2}^{2}+\alpha^{2})}
+\]
+
 \end_inset
 
 
