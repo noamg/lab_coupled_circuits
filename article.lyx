@@ -89,6 +89,18 @@
 
 \end_layout
 
+\begin_layout Standard
+התאמת דעיכת 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תלת מימד.
+\end_layout
+
 \begin_layout Part*
 רקע תיאורטי
 \end_layout
@@ -949,7 +961,7 @@ M=\frac{1}{C(\omega_{res-1}^{2}+\alpha^{2})}-L;M=L-\frac{1}{C(\omega_{res-2}^{2}
 \begin_inset Formula $M$
 \end_inset
 
- בצורה אחרת ע"י באינדקס חסר יחידות 
+ בצורה נוספת ע"י באינדקס חסר יחידות 
 \begin_inset Formula $K$
 \end_inset
 
@@ -985,6 +997,19 @@ M=K\cdot L
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+כיוון ש- 
+\begin_inset Formula $M$
+\end_inset
+
+, ו- 
+\begin_inset Formula $K$
+\end_inset
+
+ מאלצים זה את זה ביחידות )עבור השראות נתונה(, ניתן להשתמש בכל אחד מהם על
+ מנת לתאר את ההשראות ההדדית.
 \end_layout
 
 \begin_layout Part*
@@ -1106,6 +1131,10 @@ reference "fig:c_coupling_with_measure_points"
 צימוד השראותי
 \end_layout
 
+\begin_layout Subsubsection*
+מערכת הניסוי
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -1178,7 +1207,7 @@ reference "fig:l_coupling_with_measurements_points"
 \end_inset
 
 , כך שערכי הרכיבים בשני המעגלים היו: 
-\begin_inset Formula $R_{1}=1000\pm20[\Omega],R_{2}=1050\pm20[\Omega],C_{1}=C_{2}=793\pm0.8[pF],L_{1}=L_{2}=840\pm1.2[mH],C'=638.8\pm0.1[nF]$
+\begin_inset Formula $R_{1}=1000\pm20[\Omega],R_{2}=1050\pm20[\Omega],C_{1}=C_{2}=793\pm0.8[pF],L_{1}=L_{2}=840\pm1.2[mH]$
 \end_inset
 
 .
@@ -1187,8 +1216,47 @@ reference "fig:l_coupling_with_measurements_points"
 \end_inset
 
  תלויה במרחק הסלילים זה מזה.
- בשלב הראשון מדדנו את תגובת התדר של הזרם במעגל במרחק קבוע: עבור תדרים של
- מקור המתח בתחום 
+ 
+\end_layout
+
+\begin_layout Standard
+לשני המעגלים יש הארקה משותפת )ההארקה של האוסילוסקופ(.
+ דבר זה אינו משפיע על המדידה, כיוון שמדובר באילוץ של שיוויון פוטנציאלים
+ חשמליים בין המעגלים בנקודה יחידה.
+\end_layout
+
+\begin_layout Subsubsection*
+מדידת אופיין תגובת תדר של 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ בתנאי מקדם צימוד 
+\begin_inset Formula $M$
+\end_inset
+
+ קבוע
+\end_layout
+
+\begin_layout Standard
+בניסוי הראשון, קבענו מרחק קבוע בין הסלילים )למעשה, הם היו צמודים זה לזה,
+ על מנת להגדיל את מקדם הצימוד 
+\begin_inset Formula $M$
+\end_inset
+
+ ככל הניתן, ובכך להעצים את האפקט של הצימוד, כלומר, להרחיק את תדרי התהודה
+ 
+\begin_inset Formula $\omega_{+},\omega_{-}$
+\end_inset
+
+ זה מזה(.
+\end_layout
+
+\begin_layout Standard
+בשלב הראשון מדדנו את תגובת התדר של הזרם 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ במעגל: עבור תדרים של מקור המתח בתחום 
 \begin_inset Formula $3.2[k\frac{rad}{sec}]<\omega<542.7[k\frac{rad}{sec}]$
 \end_inset
 
@@ -1206,12 +1274,6 @@ reference "fig:l_coupling_with_measurements_points"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-לשני המעגלים יש הארקה משותפת )ההארקה של האוסילוסקופ(.
- דבר זה אינו משפיע על המדידה, כיוון שמדובר באילוץ של שיוויון פוטנציאלים
- חשמליים בין המעגלים בנקודה יחידה.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1293,6 +1355,14 @@ V_{2}=\epsilon_{2}=L\frac{\partial I_{2}}{\partial t}-M\frac{\partial I_{1}}{\pa
 צימוד קיבולי
 \end_layout
 
+\begin_layout Subsection*
+ניתוח תגובת התדר של סכום הזרמים 
+\begin_inset Formula $I_{+}=I_{1}+I_{2}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -1314,7 +1384,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-היגב תדר של סכום הזרמים במעגל - התנהגות של מעגל
+במערכת מעגלים מצומדים באופן קיבולי: היגב תדר של סכום הזרמים 
+\begin_inset Formula $I_{+}=I_{1}+I_{2}$
+\end_inset
+
+.
+ כמצופה בניתוח, מקבלים התנהגות של מעגל
 \family roman
 \series medium
 \shape up
@@ -1430,6 +1505,14 @@ RLC
 
 \end_layout
 
+\begin_layout Subsection*
+ניתוח תגובת התדר של הזרם 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -1451,11 +1534,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-היגב תדר של 
+במערכת מעגלים מצומדים באופן קיבולי: היגב תדר של היגב תדר של 
 \begin_inset Formula $I_{1}$
 \end_inset
 
- - ניתן לראות שני שיאים, אחד ממוקם ב-
+.
+ ניתן לראות שני שיאים, אחד ממוקם ב-
 \begin_inset Formula $f_{0}=f_{+}\approx18\left[kHz\right]$
 \end_inset
 
@@ -1537,20 +1621,20 @@ status open
 
 \end_layout
 
-\begin_layout Standard
->>> אם יש צורך, אפשר להוסיף תגובה לאימפולס - תוצאות ציר זמן<<<
-\end_layout
-
-\begin_layout Standard
-היגב תדר של צימוד קיבולי + התאמה של תדר מקסימלי/רוחב אונה + מקדם 
-\begin_inset Formula $Q$
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section*
 צימוד השראותי
+\end_layout
+
+\begin_layout Subsection*
+ניתוח תגובת התדר של הזרם 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ בתנאי צימוד 
+\begin_inset Formula $M$
+\end_inset
+
+ קבוע
 \end_layout
 
 \begin_layout Standard
@@ -1659,20 +1743,20 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-היגב תדר של צימוד השראותי + התאמה של תדר מקסימלי/רוחב אונה + מקדם 
-\begin_inset Formula $Q$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
+\begin_layout Subsection*
 מדידת מקדם צימוד
 \end_layout
 
 \begin_layout Subsection*
-<<<מדידה על פי תדרי "רזוננס"
+מידע גולמי: תדרי הרזוננס כתלות במרחק 
+\begin_inset Formula $d$
+\end_inset
+
+ )המשפיע על 
+\begin_inset Formula $M$
+\end_inset
+
+( >>>מדידה על פי תדרי רזוננס
 \end_layout
 
 \begin_layout Standard
@@ -1696,7 +1780,17 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-תדרים בעלי עוצמת היגב מקסימלית בכל מרחק בין סלילים
+צימוד השראותי: תדרי רזוננס )נמדדו בתור תדרים בעלי עוצמת היגב מקסימלית( בכל
+ מרחק בין סלילים.
+ כצפוי, עם גדילת המרחק 
+\begin_inset Formula $d$
+\end_inset
+
+, ואיתו קטינת 
+\begin_inset Formula $M$
+\end_inset
+
+, השפעת המעגל ללא מקור המתח פוחתת, ותדרי הרזוננס מתקרבים זה לזה, עד שנפגשים.
 \end_layout
 
 \end_inset
@@ -1707,10 +1801,37 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection*
+מדידת 
+\begin_inset Formula $M$
+\end_inset
+
+ עפ"י תדרי הרזוננס, ובאופן ישיר באמצעות חוק פאראדיי
 \end_layout
 
 \begin_layout Standard
-מהם חושבו:
+על סמך המידע הגולמי לעיל, ונוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:M_by_resonance"
+
+\end_inset
+
+ חישבנו את התלות של 
+\begin_inset Formula $K$
+\end_inset
+
+ במרחק.
+\end_layout
+
+\begin_layout Standard
+הערכה בלתי תלויה של 
+\begin_inset Formula $K$
+\end_inset
+
+ התקבלה ממדידה ישירה ע"ס חוק פאראדיי.
 \end_layout
 
 \begin_layout Standard
@@ -1734,7 +1855,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-ערכי
+צימוד השראותי: ערכי
 \family roman
 \series medium
 \shape up
@@ -1784,57 +1905,8 @@ K
 \uwave default
 \noun default
 \color inherit
-מחושבים ממדידת תדרים בעלי היגב מקסימלי וערכי
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang english
-K
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang hebrew
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-מחושבים ממדידה ישירה
+המחושבים ע"י כל אחד מתדרי הרזוננס, וע"י מדידה ישירה בהסתמך על חוק פאראדיי.
+ >>>התוצאות אומרות הרבה דברים + אולי לעשות התאמה?<<<
 \end_layout
 
 \end_inset
@@ -1849,23 +1921,6 @@ K
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-מדידת הצימוד ההשראותי במרחקים שונים לפי תדרי רזוננס.
-\end_layout
-
-\begin_layout Standard
-<<< מדידה ישירה!
-\end_layout
-
-\begin_layout Subsection*
-<<<מדידה על פי עוצמה בתדרים שונים
-\end_layout
-
-\begin_layout Standard
-מדידת הצימוד ההשראותי במרחקים שונים לפי עצמת ההיגב בשני תדרים קבועים לאורך
- המדידה.
 \end_layout
 
 \begin_layout Part*
