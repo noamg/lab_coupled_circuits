@@ -66,7 +66,7 @@
 \begin_body
 
 \begin_layout Title
-מעגלים וצימודם
+דעיכת צימוד השראותי במרחק
 \end_layout
 
 \begin_layout Author
@@ -74,7 +74,24 @@
 \end_layout
 
 \begin_layout Abstract
-מעגלים מצומדים טובים למשהו, מה עשינו, מה למדנו
+סלילים מצומדים ביניהם ע"י השראות הדדית - הבסיס לכל שנאי ביתי של של קווי
+ המתח הגבוה ברחוב.
+ אך כיצד משתנה טיב הצימוד הזה כתלות במרחק בין הסלילים? בניסוי זה ניתחנו
+ תלות זאת בשתי דרכים בלתי תלויות.
+ דרך אחת ישירה מתבססת ישירות על חוק פאראדיי, הגורם לתכונת ההשראות ההדדית.
+ ניתוח בלתי תלוי מקורו בשימוש בהשראות ההדדית של הסלילים על מנת לצמד מעגלי
+ 
+\begin_inset Formula $RLC$
+\end_inset
+
+.
+ בניסוי זה התחלנו בניתוח של צימוד פשוט יותר: צימוד מעגלים ע"י קבל, והמשכנו
+ לניתוח הצימוד ההשראותי.
+ באמצעות תדרי הרזוננס, המאפיינים מעגלי 
+\begin_inset Formula $RLC$
+\end_inset
+
+ קיבלנו מדד נוסף להשראות, ובכך תיקפנו איכותית את התוצאות של הגישה הישירה.
 \end_layout
 
 \begin_layout Section*
@@ -82,23 +99,32 @@
 \end_layout
 
 \begin_layout Standard
-להחליף 
-\begin_inset Formula $\exp(-i\omega t)\Rightarrow\exp(i\omega t)$
-\end_inset
-
-
+לסלק >>><<<
 \end_layout
 
 \begin_layout Standard
-התאמת דעיכת 
-\begin_inset Formula $M$
+להתאים עקומה כלשהי לדעיכה של 
+\begin_inset Formula $K$
 \end_inset
 
-
+ כתלות במרחק.
+ להוסיף אותה לגרף, להוסיף איזכור בסיכום ומסקנות
 \end_layout
 
 \begin_layout Standard
-תלת מימד.
+לעשות את התלת מימד - לנספח
+\end_layout
+
+\begin_layout Standard
+לוודא סיכום ומסקנות
+\end_layout
+
+\begin_layout Standard
+אולי לסלק חלק מהכותרות שנועם הוסיף בשביל לנפח
+\end_layout
+
+\begin_layout Standard
+לסגור עימוד כדי שהגרפים והתמונות יהיו טוב
 \end_layout
 
 \begin_layout Part*
@@ -398,8 +424,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/c_coupling_2.png
-	lyxscale 50
-	scale 50
+	lyxscale 35
+	scale 35
 
 \end_inset
 
@@ -1033,8 +1059,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/Ccouple.png
-	lyxscale 20
-	scale 20
+	lyxscale 35
+	scale 35
 
 \end_inset
 
@@ -1756,7 +1782,7 @@ status open
 \begin_inset Formula $M$
 \end_inset
 
-( >>>מדידה על פי תדרי רזוננס
+(
 \end_layout
 
 \begin_layout Standard
@@ -1927,10 +1953,67 @@ K
 סיכום ומסקנות
 \end_layout
 
+\begin_layout Subsubsection*
+צימוד קיבולי
+\end_layout
+
 \begin_layout Standard
-צימוד השראותי - משהו עם זה שהמעגל השני הוא "טפיל" על הראשון.
- כאשר מתרחקים הראשון מתנהג כמו משדר.
- כלומר, יש העברה הלוך פעם אחת, אבל לא חזור.
+כצפוי, אופיין תגובת התדר של 
+\begin_inset Formula $I_{+}$
+\end_inset
+
+ היה זהה לזה של מעגל 
+\begin_inset Formula $RLC$
+\end_inset
+
+ פשוט שקול, ואופיין תגובת התדר של 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ היה בעל שני רזוננסים.
+ בניגוד למצופה, הרזוננס 
+\begin_inset Formula $\omega_{-}$
+\end_inset
+
+ היה מתחת לרזוננס 
+\begin_inset Formula $\omega_{+}=\omega_{0}$
+\end_inset
+
+.
+ איננו יודעים להסביר היטב תופעה זו.
+ ייתכן, שהתופעה נובעת מהבדל של שלושה סדרי גודל בין 
+\begin_inset Formula $C$
+\end_inset
+
+ ל- 
+\begin_inset Formula $C'$
+\end_inset
+
+ שנותנת אפקט לא צפוי.
+\end_layout
+
+\begin_layout Subsubsection*
+צימוד השראותי
+\end_layout
+
+\begin_layout Standard
+כצפוי, אופיין תגובת התדר של 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ היה בעל שני רזוננסים במיקומים הנכונים לפי התיאוריה.
+ באופן צפוי התנהגו גם ערכי הרזוננס כתלות במרחק.
+ המעגל ללא מקור המתח, מהווה מעין "טפיל" על האנרגיה של המעגל בעל מקור המתח.
+ ככל שהצימוד חלש יותר, המעגל הטפיל משפיע פחות על ההתנהגות הטבעית של המעגל
+ הראשון, ותדרי הרזוננס מתקרבים לתדר הרזוננס של המעגל הראשון בתור מעגל 
+\begin_inset Formula $RLC$
+\end_inset
+
+פשוט.
+\end_layout
+
+\begin_layout Standard
+>>> משהו על ההתאמה שעשינו, ושנדרש מחקר נוסף <<<
 \end_layout
 
 \begin_layout Part*
