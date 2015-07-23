@@ -339,11 +339,11 @@ I=\frac{V_{0}}{R+\frac{1}{i\omega C}+i\omega L}\exp(-i\omega t)\Rightarrow I(t)=
 \end_layout
 
 \begin_layout Standard
->>>רוחב עקומה _____, מקדם 
-\begin_inset Formula $Q$
+רוחב הפיק של הרזוננס, הינו בקירוב 
+\begin_inset Formula $2\alpha$
 \end_inset
 
- <<<
+, עובדה שתשמש אותנו להבחנת רזוננסים שונים זה מזה במערכות מורכבות יותר.
 \end_layout
 
 \begin_layout Standard
@@ -352,15 +352,6 @@ I=\frac{V_{0}}{R+\frac{1}{i\omega C}+i\omega L}\exp(-i\omega t)\Rightarrow I(t)=
 \end_inset
 
  מתנהג בתור אוסילטור הרמוני מאולץ.
-\end_layout
-
-\begin_layout Standard
->>>זבל ישן:
-\end_layout
-
-\begin_layout Standard
-שרטוט מעגל + היגב למתח מאלץ, משוואה, פיתרון מד"ר, פיתרון עכבות.
- תחום של ריסון חלש - בעצם לא מתאים למקרה שלנו, שבו יש אילוץ.<<<
 \end_layout
 
 \begin_layout Section*
@@ -651,15 +642,6 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 
 \end_layout
 
-\begin_layout Standard
->>>מקרה שני במקרה _____ מתקבלים שני רזוננסים )כצפוי, רזוננס עבור כל אחד
- מ- 
-\begin_inset Formula $I_{+},I_{-}$
-\end_inset
-
-(.<<<
-\end_layout
-
 \begin_layout Section*
 צימוד השראותי של מעגלי 
 \begin_inset Formula $RLC$
@@ -736,7 +718,7 @@ name "fig:coupled_M"
 
 .
  עבור שני תיילים בגיאומטריה קבועה, חוק זה מתבטא בתור 
-\begin_inset Formula $M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}$
+\begin_inset Formula $-M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}$
 \end_inset
 
 .
@@ -884,10 +866,6 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \end_layout
 
 \begin_layout Standard
->>>להמיר לדברים הנכונים עבור השראות ולא צימוד<<<
-\end_layout
-
-\begin_layout Standard
 במקרה של צימוד חלש: 
 \begin_inset Formula $L\gg M\Rightarrow L_{+}\approx L_{-}\Rightarrow\phi_{+}\approx\phi_{-}$
 \end_inset
@@ -923,7 +901,7 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 \end_layout
 
 \begin_layout Standard
-כמו כן מתקבלים שני רזוננסים קרובים בתדרים: 
+כמו כן מתקבלים שני רזוננסים בתדרים: 
 \begin_inset Formula $\omega_{res-1}=\sqrt{\omega_{+}^{2}-\alpha^{2}}$
 \end_inset
 
@@ -957,8 +935,32 @@ reference "eq:RLC_definitions_w_o_alpha_phi"
 
  כתלות בכל אחד מתדרי הרזוננס:
 \begin_inset Formula 
+\begin{equation}
+M=\frac{1}{C(\omega_{res-1}^{2}+\alpha^{2})}-L;M=L-\frac{1}{C(\omega_{res-2}^{2}+\alpha^{2})}\label{eq:M_by_resonance}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתארים את 
+\begin_inset Formula $M$
+\end_inset
+
+ בצורה אחרת ע"י באינדקס חסר יחידות 
+\begin_inset Formula $K$
+\end_inset
+
+ )
+\begin_inset Formula $0\leq K\leq1$
+\end_inset
+
+(:
+\begin_inset Formula 
 \[
-M=\frac{1}{C(\omega_{res-1}^{2}+\alpha^{2})}-L;M=L-\frac{1}{C(\omega_{res-2}^{2}+\alpha^{2})}
+K=\frac{M}{\sqrt{L_{1}\cdot L_{2}}}
 \]
 
 \end_inset
@@ -967,112 +969,22 @@ M=\frac{1}{C(\omega_{res-1}^{2}+\alpha^{2})}-L;M=L-\frac{1}{C(\omega_{res-2}^{2}
 \end_layout
 
 \begin_layout Standard
->>>הזרם בסליל
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-1
-\numeric off
- משרה שדה מגנטי במרחב, שיוצר שטף מגנטי בסליל
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-2
-\numeric off
-.
- כיוון שהזרם בסליל
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-1
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-משתנה בזמן, הוא יוצר שינוי בשטף המגנטי<<<.
+וכאשר 
+\begin_inset Formula $L_{1}=L_{2}$
+\end_inset
+
+ נקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=K\cdot L
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Part*
@@ -1095,7 +1007,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/c_coupling_2.png
+	filename figures/Ccouple.png
 	lyxscale 20
 	scale 20
 
@@ -1111,11 +1023,12 @@ name "fig:c_coupling_with_measure_points"
 
 \end_inset
 
->>>תמונות של המעגלים, עם הדגשה של נקודות המדידה, ונגדים 
-\begin_inset Formula $R_{a},R_{b}R_{c}$
+מערכת הניסוי למדידת אופיין תגובת התדר עבור מעגלים מצומדים בצימוד קיבולי.
+ הסימון 
+\begin_inset Formula $gnd$
 \end_inset
 
-<<<
+ הוא ההארקה של האוסילוסקופ
 \end_layout
 
 \end_inset
@@ -1142,12 +1055,12 @@ reference "fig:c_coupling_with_measure_points"
 
 .
  בחרנו רכיבים זהים בשני המעגלים בערכים: 
-\begin_inset Formula $R_{a}=R_{b}=1000\pm20[\Omega],C_{1}=C_{2}=360\pm0.4[pF],L_{1}=L_{2}=218\pm1.2[mH],C'=638.8\pm0.1[nF]$
+\begin_inset Formula $R_{1}=R_{2}=1000\pm20[\Omega],C_{1}=C_{2}=360\pm0.4[pF],L_{1}=L_{2}=218\pm1.2[mH],C'=638.8\pm0.1[nF]$
 \end_inset
 
 .
  הנגד 
-\begin_inset Formula $R_{c}=50[\Omega]$
+\begin_inset Formula $R_{3}=50[\Omega]$
 \end_inset
 
  שווה להתנגדות הפנימית של מקור המתח.
@@ -1164,7 +1077,7 @@ reference "fig:c_coupling_with_measure_points"
 \end_inset
 
  מדדנו את המתחים 
-\begin_inset Formula $V_{a},V_{a+b}$
+\begin_inset Formula $V_{1},V_{1+2}$
 \end_inset
 
  באמצעות האוסילוסקופ המופיע באיור.
@@ -1173,16 +1086,16 @@ reference "fig:c_coupling_with_measure_points"
 \end_inset
 
  לפי: 
-\begin_inset Formula $I_{1}=\frac{V_{a}}{R_{a}},I_{2}=\frac{V_{a+b}-V_{a}}{R_{b}}$
+\begin_inset Formula $I_{1}=\frac{V_{1}}{R_{1}},I_{2}=\frac{V_{1+2}-V_{1}}{R_{2}}$
 \end_inset
 
 .
  כיוון ש- 
-\begin_inset Formula $R_{a}=R_{b}$
+\begin_inset Formula $R_{1}=R_{2}$
 \end_inset
 
  מתקבל חישוב ישיר של: 
-\begin_inset Formula $I_{+}=I_{1}+I_{2}=\frac{V_{a+b}}{R_{a}}$
+\begin_inset Formula $I_{+}=I_{1}+I_{2}=\frac{V_{1+2}}{R_{1}}$
 \end_inset
 
 .
@@ -1205,7 +1118,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/l_coupling_inverted.png
+	filename figures/l_coupling_inverted_dist.png
 	lyxscale 50
 	scale 50
 
@@ -1221,7 +1134,20 @@ name "fig:l_coupling_with_measurements_points"
 
 \end_inset
 
->>>תמונות של המעגלים, עם הדגשה של נקודות המדידה + נגד שמקזז את מקור המתח<<<
+מערכת הניסוי למדידת אופיין תגובת התדר עבור מעגלים מצומדים בצימוד השראותי.
+ הקווים המקווקווים מתחברים לאוסילוסקופ.
+ הסלילים בעלי ציר משותף, והמרחק ביניהם 
+\begin_inset Formula $d$
+\end_inset
+
+ קובע את ההשראות ההדדית 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ לשני המעגלים יש הארקה משותפת )ההארקה של האוסילוסקופ(.
+ דבר זה אינו משפיע על המדידה, כיוון שמדובר באילוץ של שיוויון פוטנציאלים
+ חשמליים בין המעגלים בנקודה יחידה.
 \end_layout
 
 \end_inset
@@ -1239,25 +1165,35 @@ name "fig:l_coupling_with_measurements_points"
 \end_layout
 
 \begin_layout Standard
-הרכבנו מעגל כמתואר באיור >>><<<.
- בחרנו רכיבים זהים בשני המעגלים בערכים: ___.
- הנגד 
+הרכבנו מעגל כמתואר באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:l_coupling_with_measurements_points"
+
+\end_inset
+
+.
+ השוונו את התנגדות הפנימית של מקור המתח בעזרת נגד 
 \begin_inset Formula $R_{c}=50[\Omega]$
 \end_inset
 
- שווה להתנגדות הפנימית של מקור המתח.
+, כך שערכי הרכיבים בשני המעגלים היו: 
+\begin_inset Formula $R_{1}=1000\pm20[\Omega],R_{2}=1050\pm20[\Omega],C_{1}=C_{2}=793\pm0.8[pF],L_{1}=L_{2}=840\pm1.2[mH],C'=638.8\pm0.1[nF]$
+\end_inset
+
+.
  הסלילים בעלי ציר משותף, ולכן ההשראות ההדדית 
 \begin_inset Formula $M$
 \end_inset
 
  תלויה במרחק הסלילים זה מזה.
- >>>האם תמיד צימוד חלש או משהו???<<<.בשלב הראשון מדדנו את תגובת התדר של הזרם
- במעגל במרחק קבוע: עבור תדרים של מקור המתח בתחום 
-\begin_inset Formula $--[\frac{rad}{sec}]<\omega<--[\frac{rad}{sec}]$
+ בשלב הראשון מדדנו את תגובת התדר של הזרם במעגל במרחק קבוע: עבור תדרים של
+ מקור המתח בתחום 
+\begin_inset Formula $3.2[k\frac{rad}{sec}]<\omega<542.7[k\frac{rad}{sec}]$
 \end_inset
 
-מדדנו את המתחים 
-\begin_inset Formula $V_{a},V_{b}$
+ מדדנו את המתחים 
+\begin_inset Formula $V_{1},V_{2}$
 \end_inset
 
  באמצעות האוסילוסקופ המופיע באיור.
@@ -1266,14 +1202,14 @@ name "fig:l_coupling_with_measurements_points"
 \end_inset
 
  לפי: 
-\begin_inset Formula $I_{1}=\frac{V_{a}}{R_{a}},I_{2}=\frac{V_{b}}{R_{b}}$
+\begin_inset Formula $I_{1}=\frac{V_{1}}{R_{1}},I_{2}=\frac{V_{2}}{R_{2}}$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
-כפי שרואים באיור, לשני המעגלים יש הארקה משותפת )ההארקה של האוסילוסקופ(.
+לשני המעגלים יש הארקה משותפת )ההארקה של האוסילוסקופ(.
  דבר זה אינו משפיע על המדידה, כיוון שמדובר באילוץ של שיוויון פוטנציאלים
  חשמליים בין המעגלים בנקודה יחידה.
 \end_layout
@@ -1283,17 +1219,31 @@ name "fig:l_coupling_with_measurements_points"
 \end_layout
 
 \begin_layout Standard
->>>איור מרחק בין סלילים<<<
-\end_layout
+בשלב השני של הניסוי, שינינו את המרחק 
+\begin_inset Formula $d$
+\end_inset
 
-\begin_layout Standard
-בשלב השני של הניסוי, שינינו את המרחק __ בין הסלילים.
+ בין הסלילים, כפי שמופיע באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:l_coupling_with_measurements_points"
+
+\end_inset
+
+.
  בכל מרחק בדקנו את עצמת הזרמים 
 \begin_inset Formula $I_{1},I_{2}$
 \end_inset
 
  הנצפית בסקופ כתלות בתדר, ומדדנו את תדרי הרזוננס.
- לפי נוסחא ___, מתדרי הרזוננס חישבנו את מקדם ההשראות ההדדית 
+ לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:M_by_resonance"
+
+\end_inset
+
+, מתדרי הרזוננס חישבנו את מקדם ההשראות ההדדית 
 \begin_inset Formula $M$
 \end_inset
 
@@ -1319,7 +1269,7 @@ name "fig:l_coupling_with_measurements_points"
  נקבל: 
 \begin_inset Formula 
 \[
-V_{b}=\epsilon_{2}=L\frac{\partial I_{2}}{\partial t}-M\frac{\partial I_{1}}{\partial t}=L\frac{V_{b}}{R}\omega-M\frac{V_{a}}{R}\omega\Rightarrow M=\frac{V_{b}}{V_{a}}\left(L-\frac{R}{\omega}\right)
+V_{2}=\epsilon_{2}=L\frac{\partial I_{2}}{\partial t}-M\frac{\partial I_{1}}{\partial t}=L\frac{V_{2}}{R}\omega-M\frac{V_{1}}{R}\omega\Rightarrow M=\frac{V_{b}}{V_{a}}\left(L-\frac{R}{\omega}\right)
 \]
 
 \end_inset
@@ -1328,19 +1278,11 @@ V_{b}=\epsilon_{2}=L\frac{\partial I_{2}}{\partial t}-M\frac{\partial I_{1}}{\pa
 \end_layout
 
 \begin_layout Standard
->>>
-\begin_inset Formula 
-\[
-M\frac{\partial I_{1}}{\partial t}=\epsilon_{2}\Rightarrow M\omega\left|\frac{V_{a}}{R}\right|=|V_{b}|\Rightarrow M=\frac{1}{\omega R}\left|\frac{V_{b}}{V_{a}}\right|
-\]
-
+בניסוי זה תיקפנו את ההנחה של צימוד חלש 
+\begin_inset Formula $K\ll1$
 \end_inset
 
-<<<
-\end_layout
-
-\begin_layout Subsubsection*
-מדידת מקדם השראות הדדית כתלות במרחק)?(
+, מה שהצדיק את השימוש בהנחה זו בניסוי הקודם.
 \end_layout
 
 \begin_layout Part*
