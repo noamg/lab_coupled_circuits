@@ -94,39 +94,6 @@
  קיבלנו מדד נוסף להשראות, ובכך תיקפנו איכותית את התוצאות של הגישה הישירה.
 \end_layout
 
-\begin_layout Section*
-נותר לעשות>>><<<
-\end_layout
-
-\begin_layout Standard
-לסלק >>><<<
-\end_layout
-
-\begin_layout Standard
-להתאים עקומה כלשהי לדעיכה של 
-\begin_inset Formula $K$
-\end_inset
-
- כתלות במרחק.
- להוסיף אותה לגרף, להוסיף איזכור בסיכום ומסקנות
-\end_layout
-
-\begin_layout Standard
-לעשות את התלת מימד - לנספח
-\end_layout
-
-\begin_layout Standard
-לוודא סיכום ומסקנות
-\end_layout
-
-\begin_layout Standard
-אולי לסלק חלק מהכותרות שנועם הוסיף בשביל לנפח
-\end_layout
-
-\begin_layout Standard
-לסגור עימוד כדי שהגרפים והתמונות יהיו טוב
-\end_layout
-
 \begin_layout Part*
 רקע תיאורטי
 \end_layout
@@ -239,56 +206,6 @@ RLC
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figures/RLC_series_circuit_v1.svg.png
-	lyxscale 5
-	scale 5
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-מעגל 
-\begin_inset Formula $RLC$
-\end_inset
-
-בעל מקור מתח מאלץ
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:RLC circ"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 מעגל 
 \begin_inset Formula $RLC$
 \end_inset
@@ -300,7 +217,7 @@ reference "fig:RLC circ"
 
 \end_inset
 
-.כאשר המתח המאלץ הינו סינוסואידלי: 
+ שבנספח.כאשר המתח המאלץ הינו סינוסואידלי: 
 \begin_inset Formula $V(t)=V_{0}\exp(-i\omega t)$
 \end_inset
 
@@ -424,8 +341,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/c_coupling_2.png
-	lyxscale 35
-	scale 35
+	lyxscale 27
+	scale 27
 
 \end_inset
 
@@ -712,8 +629,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/l_coupling_inverted.png
-	lyxscale 50
-	scale 50
+	lyxscale 55
+	scale 55
 
 \end_inset
 
@@ -1398,8 +1315,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/Isum_RLC_response_fit_withErr_etc.png
-	lyxscale 50
-	scale 50
+	lyxscale 40
+	scale 40
 
 \end_inset
 
@@ -1548,8 +1465,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/I1_RLC_response_fit_withErr_etc.png
-	lyxscale 50
-	scale 50
+	lyxscale 40
+	scale 45
 
 \end_inset
 
@@ -1672,8 +1589,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/freqResponseFit_I2.png
-	lyxscale 50
-	scale 50
+	lyxscale 45
+	scale 35
 
 \end_inset
 
@@ -1794,8 +1711,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/freqVsDist.png
-	lyxscale 50
-	scale 50
+	lyxscale 55
+	scale 70
 
 \end_inset
 
@@ -1870,7 +1787,7 @@ status open
 \begin_inset Graphics
 	filename figures/KVsDist_withDirect.png
 	lyxscale 50
-	scale 50
+	scale 55
 
 \end_inset
 
@@ -1932,7 +1849,64 @@ K
 \noun default
 \color inherit
 המחושבים ע"י כל אחד מתדרי הרזוננס, וע"י מדידה ישירה בהסתמך על חוק פאראדיי.
- >>>התוצאות אומרות הרבה דברים + אולי לעשות התאמה?<<<
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+ניסיון ראשוני למידול התלות 
+\begin_inset Formula $M(d)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/M fit exp.png
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+התאמה ראשונית של מודל מערכי דועך לקשר 
+\begin_inset Formula $M(d)$
+\end_inset
+
+.
+ נקודות המדידה נלקחו בתור ממוצע ממושקל של שלושת המדידות של 
+\begin_inset Formula $M(d)$
+\end_inset
+
+ בגרף הקודם.
+ קבוע הדעיכה המתקבל הינו 
+\begin_inset Formula $a=0.41\pm0.03[\frac{1}{cm}]$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1941,6 +1915,56 @@ K
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/M fit power.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+התאמה ראשונית של מודל חזקה שלילית דועך לקשר 
+\begin_inset Formula $M(d)$
+\end_inset
+
+.
+ נקודות המדידה נלקחו בתור ממוצע ממושקל של שלושת המדידות של 
+\begin_inset Formula $M(d)$
+\end_inset
+
+ )שני רזוננסים, מדידה ישירה(.
+ קבוע הדעיכה המתקבל הינו 
+\begin_inset Formula $a=0.44\pm0.24$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $a$
+\end_inset
+
+ מספר טהור(.
+ תחום השגיאה הרחב אינדיקטיבי לכך שמודל החזקה השלילית לא מתאים לתיאור המערכת.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2010,14 +2034,121 @@ K
 \end_inset
 
 פשוט.
-\end_layout
+ השתמשנו במדידה של תדרי הרזוננס ובמדידה ישירה על מנת להציג את 
+\begin_inset Formula $M$
+\end_inset
 
-\begin_layout Standard
->>> משהו על ההתאמה שעשינו, ושנדרש מחקר נוסף <<<
+ כתלות במרחק בין הסלילים, ולהציג מודל בסיסי למצב: מודל דעיכה מעריכית.
+ המודל מתאים לדרישה הבסיסית שבמרחק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יתקיים 
+\begin_inset Formula $M=L$
+\end_inset
+
+ וש- 
+\begin_inset Formula $M$
+\end_inset
+
+ יתאפס כאשר 
+\begin_inset Formula $d\to\infty$
+\end_inset
+
+.
+ על מנת לתקף את המודל בצורה יסודית יותר, נדרש איסוף מידע נוסף.
 \end_layout
 
 \begin_layout Part*
 נספח
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/RLC_series_circuit_v1.svg.png
+	lyxscale 5
+	scale 5
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל 
+\begin_inset Formula $RLC$
+\end_inset
+
+בעל מקור מתח מאלץ
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:RLC circ"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
